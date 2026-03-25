@@ -1,6 +1,6 @@
 @extends('layouts.site')
 
-@section('title', 'Statosy — Cloud Services & Software Engineering')
+@section('title', 'Statosy — Cloud Services & Software Solutions')
 @section('description',
     'Statosy provides a consultative approach to emerging technology: software development, software
     management, cyber security, IT consulting, cloud management, and 24/7 support.')

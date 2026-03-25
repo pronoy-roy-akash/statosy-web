@@ -7,6 +7,8 @@
     <title>@yield('title', config('app.name', 'Statosy'))</title>
     <meta name="description" content="@yield('description', 'Statosy builds cloud services and software products with strong security, reliability, and fast delivery.')">
     <meta name="theme-color" content="#000000">
+    <link rel="icon" href="{{ asset('frontend/assets/images/icon.png') }}" type="image/png">
+    <link rel="apple-touch-icon" href="{{ asset('frontend/assets/images/icon.png') }}">
 
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
