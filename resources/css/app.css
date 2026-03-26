@@ -205,7 +205,8 @@ svg {
 .nav__dropdown {
     display: none;
     position: absolute;
-    top: calc(100% + 10px);
+    top: 100%;
+    margin-top: 10px;
     left: 0;
     min-width: 260px;
     z-index: 120;
@@ -221,8 +222,8 @@ svg {
     position: absolute;
     left: 0;
     right: 0;
-    top: -12px;
-    height: 12px;
+    top: -10px;
+    height: 10px;
     background: transparent;
 }
 
@@ -268,12 +269,6 @@ svg {
     border: 1px solid rgba(255, 255, 255, 0.1);
     background: rgba(255, 255, 255, 0.02);
     padding: 6px;
-}
-
-@media (hover: hover) and (pointer: fine) {
-    .nav__item--dropdown:hover .nav__dropdown {
-        display: block;
-    }
 }
 
 .nav__links a {
@@ -546,6 +541,278 @@ svg {
     gap: 18px;
     align-items: end;
     margin-bottom: 22px;
+}
+
+.section__head--spaced {
+    margin-top: 34px;
+}
+
+.impact--spaced {
+    margin-top: 22px;
+}
+
+.subnav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 18px;
+}
+
+.subnav__link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 9px 12px;
+    border-radius: 999px;
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    background: rgba(255, 255, 255, 0.03);
+    color: rgba(255, 255, 255, 0.76);
+    font-weight: 750;
+    font-size: 13px;
+    line-height: 1;
+}
+
+.subnav__link:hover {
+    background: rgba(255, 255, 255, 0.06);
+    color: rgba(255, 255, 255, 0.92);
+}
+
+.subnav__link.is-active {
+    background: rgba(255, 255, 255, 0.92);
+    border-color: rgba(255, 255, 255, 0.92);
+    color: rgba(0, 0, 0, 0.95);
+}
+
+.awardNote {
+    margin-top: 14px;
+    border-radius: 22px;
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.06), rgba(255, 255, 255, 0.03));
+    padding: 16px 16px;
+    display: grid;
+    gap: 10px;
+}
+
+.awardNote__title {
+    font-weight: 900;
+    letter-spacing: -0.4px;
+    font-size: 16px;
+    line-height: 1.25;
+}
+
+.awardNote__text {
+    line-height: 1.75;
+}
+
+.awardNote__row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.awardNote__fine {
+    color: rgba(255, 255, 255, 0.62);
+    font-size: 13px;
+    line-height: 1.5;
+}
+
+.awardChip {
+    display: inline-flex;
+    align-items: center;
+    padding: 9px 12px;
+    border-radius: 999px;
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    background: rgba(0, 0, 0, 0.2);
+    color: rgba(255, 255, 255, 0.82);
+    font-weight: 750;
+    font-size: 13px;
+    line-height: 1;
+}
+
+.awardWall {
+    border-radius: 18px;
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    background: rgba(0, 0, 0, 0.22);
+    padding: 14px;
+}
+
+.awardWall__title {
+    font-weight: 850;
+    font-size: 12px;
+    letter-spacing: 0.9px;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.86);
+    margin-bottom: 10px;
+}
+
+.awardWall__grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 10px;
+}
+
+.awardTile {
+    border-radius: 14px;
+    border: 1px dashed rgba(255, 255, 255, 0.22);
+    background: rgba(255, 255, 255, 0.02);
+    padding: 12px;
+    display: grid;
+    gap: 6px;
+}
+
+.awardTile__k {
+    font-weight: 850;
+    letter-spacing: 0.8px;
+    text-transform: uppercase;
+    font-size: 11px;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.awardTile__v {
+    font-weight: 900;
+    letter-spacing: -0.3px;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.quote {
+    border-radius: 22px;
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    background: rgba(255, 255, 255, 0.03);
+    padding: 22px;
+    display: grid;
+    gap: 10px;
+}
+
+.quote__text {
+    font-size: 18px;
+    line-height: 1.65;
+    color: rgba(255, 255, 255, 0.9);
+    letter-spacing: -0.2px;
+    font-weight: 650;
+}
+
+.quote__by {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 13px;
+    font-weight: 650;
+}
+
+.ctaDuo {
+    margin-top: 18px;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 14px;
+}
+
+.ctaDuo__item {
+    border-radius: 22px;
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.06), rgba(255, 255, 255, 0.03));
+    padding: 18px;
+}
+
+.ctaDuo__title {
+    font-weight: 900;
+    letter-spacing: -0.4px;
+    font-size: 16px;
+    line-height: 1.25;
+}
+
+.timeline {
+    margin-top: 18px;
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 12px;
+}
+
+.timeline__item {
+    border-radius: 18px;
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    background: rgba(0, 0, 0, 0.2);
+    padding: 14px;
+    display: grid;
+    gap: 8px;
+}
+
+.timeline__year {
+    font-weight: 950;
+    letter-spacing: -0.3px;
+    color: rgba(255, 255, 255, 0.88);
+}
+
+.timeline__text {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 13px;
+    line-height: 1.55;
+}
+
+.leaders {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 14px;
+}
+
+.leader {
+    border-radius: 18px;
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.06), rgba(255, 255, 255, 0.03));
+    padding: 18px;
+    min-height: 170px;
+    display: grid;
+    gap: 10px;
+}
+
+.leader__top {
+    display: grid;
+    gap: 6px;
+}
+
+.leader__role {
+    display: inline-flex;
+    align-items: center;
+    width: fit-content;
+    padding: 7px 10px;
+    border-radius: 999px;
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    background: rgba(0, 0, 0, 0.2);
+    font-size: 12px;
+    font-weight: 850;
+    letter-spacing: 0.8px;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.84);
+}
+
+.leader__name {
+    font-weight: 900;
+    letter-spacing: -0.4px;
+    font-size: 18px;
+    line-height: 1.15;
+}
+
+.leader__work {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+.leader__tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 2px;
+}
+
+.tag {
+    display: inline-flex;
+    align-items: center;
+    padding: 7px 10px;
+    border-radius: 999px;
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    background: rgba(255, 255, 255, 0.02);
+    color: rgba(255, 255, 255, 0.76);
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 1;
 }
 
 .steps {
@@ -1118,6 +1385,22 @@ textarea:focus {
     }
 
     .panel__meta {
+        grid-template-columns: 1fr;
+    }
+
+    .ctaDuo {
+        grid-template-columns: 1fr;
+    }
+
+    .timeline {
+        grid-template-columns: 1fr;
+    }
+
+    .leaders {
+        grid-template-columns: 1fr;
+    }
+
+    .awardWall__grid {
         grid-template-columns: 1fr;
     }
 

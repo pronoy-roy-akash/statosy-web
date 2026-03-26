@@ -57,6 +57,34 @@ if (dropdownRoots.length) {
         const menu = root.querySelector('[data-dropdown]');
         if (!btn || !menu) return;
 
+        let closeTimer = 0;
+
+        const cancelClose = () => {
+            if (closeTimer) {
+                window.clearTimeout(closeTimer);
+                closeTimer = 0;
+            }
+        };
+
+        const scheduleClose = () => {
+            cancelClose();
+            closeTimer = window.setTimeout(() => {
+                setDropdownOpen(root, false);
+            }, 220);
+        };
+
+        root.addEventListener('pointerenter', (e) => {
+            if (e.pointerType !== 'mouse') return;
+            cancelClose();
+            closeAllDropdowns();
+            setDropdownOpen(root, true);
+        });
+
+        root.addEventListener('pointerleave', (e) => {
+            if (e.pointerType !== 'mouse') return;
+            scheduleClose();
+        });
+
         btn.addEventListener('click', () => {
             const open = !menu.classList.contains('is-open');
             closeAllDropdowns();
