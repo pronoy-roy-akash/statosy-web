@@ -17,28 +17,23 @@
                     <a class="btn btn--primary" href="{{ route('home') }}#contact">Let’s talk</a>
                     <a class="btn btn--ghost" href="{{ route('solutions.index') }}">Explore solutions</a>
                 </div>
-
-                <div class="subnav">
-                    <a class="subnav__link is-active" href="{{ route('company.about') }}">About Us</a>
-                    <a class="subnav__link" href="{{ route('company.awards') }}">Awards & Recognition</a>
-                    <a class="subnav__link" href="{{ route('company.careers') }}">Careers</a>
-                </div>
             </div>
 
-            <div class="hero__visual" aria-hidden="true">
-                <div class="panel">
-                    <div class="panel__meta">
-                        <div class="meta">
+            <div class="hero__visual hero__visual--about" aria-hidden="true">
+                <div class="panel panel--snapshot">
+                    <div class="panel__title">Company Snapshot</div>
+                    <div class="panel__meta panel__meta--about">
+                        <div class="meta meta--split">
                             <div class="meta__k">2025</div>
-                            <div class="meta__v">Journey begins</div>
+                            <div class="meta__v">Founded</div>
                         </div>
-                        <div class="meta">
+                        <div class="meta meta--split">
                             <div class="meta__k">20+</div>
-                            <div class="meta__v">Developers in the team</div>
+                            <div class="meta__v">Developers</div>
                         </div>
-                        <div class="meta">
+                        <div class="meta meta--split">
                             <div class="meta__k">Onboarding</div>
-                            <div class="meta__v">Prestigious new client projects</div>
+                            <div class="meta__v">Prestigious client projects</div>
                         </div>
                     </div>
                 </div>
@@ -174,10 +169,10 @@
                 </div>
             </div>
 
-            <div class="sectionDivider" aria-hidden="true"></div>
+            <div class="sectionDivider sectionDivider--lg" aria-hidden="true"></div>
 
             <div class="section__head section__head--spaced">
-                <h2 class="h2">Our story</h2>
+                <h2 class="h2">Our Story</h2>
                 <p class="muted">Statosy started its journey in 2025. Since then we’ve been onboarding prestigious
                     projects and growing a team built around quality and accountability.</p>
             </div>
@@ -201,11 +196,11 @@
                 </div>
             </div>
 
-            <div class="impact impact--spaced">
+            <div class="impact impact--spaced impact--xl">
                 <div class="impact__copy">
-                    <h2 class="h2">Keep your business safe & ensure high availability</h2>
-                    <p class="muted">We deliver software and cloud operations with a consultative approach on emerging
-                        technology—built for real production outcomes.</p>
+                    <h2 class="h2">Keep your systems safe & highly available</h2>
+                    <p class="muted">We build and operate production software with security-first practices, reliability
+                        patterns, and clear delivery discipline—so your team gets stability without losing speed.</p>
                     <div class="impact__cta">
                         <a class="btn btn--primary" href="{{ route('home') }}#contact">Talk to our experts</a>
                         <a class="btn btn--ghost" href="{{ route('home') }}#services">View services</a>
@@ -213,29 +208,18 @@
                 </div>
                 <div class="impact__stats">
                     <div class="stat">
-                        <div class="stat__k">20+</div>
-                        <div class="stat__v">Developers</div>
+                        <div class="stat__k">Service Level</div>
+                        <div class="stat__v">Response & resolution targets</div>
                     </div>
                     <div class="stat">
-                        <div class="stat__k">Cloud</div>
-                        <div class="stat__v">High availability focus</div>
+                        <div class="stat__k">Uptime</div>
+                        <div class="stat__v">Designed for resilience</div>
                     </div>
                     <div class="stat">
                         <div class="stat__k">Security</div>
-                        <div class="stat__v">Practical protections</div>
+                        <div class="stat__v">Hardening, least privilege</div>
                     </div>
                 </div>
-            </div>
-
-            <div class="section__head section__head--spaced">
-                <h2 class="h2">Accelerate your career now</h2>
-                <p class="muted">Join a team that values honesty, integrity, and ethical business practices—focused on
-                    doing the right thing for clients and users.</p>
-            </div>
-
-            <div class="hero__cta">
-                <a class="btn btn--primary" href="{{ route('company.careers') }}">View careers</a>
-                <a class="btn btn--ghost" href="{{ route('home') }}#contact">Contact</a>
             </div>
         </div>
     </section>

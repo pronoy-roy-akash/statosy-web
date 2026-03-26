@@ -403,6 +403,10 @@ svg {
     min-height: 420px;
 }
 
+.hero__visual--about {
+    padding-top: 54px;
+}
+
 .orb {
     position: absolute;
     filter: blur(22px);
@@ -430,11 +434,46 @@ svg {
 
 .panel {
     position: relative;
+    display: grid;
+    gap: 12px;
     border-radius: 22px;
     border: 1px solid rgba(255, 255, 255, 0.14);
     background: linear-gradient(180deg, rgba(255, 255, 255, 0.06), rgba(255, 255, 255, 0.02));
     box-shadow: var(--shadow);
     padding: 16px;
+}
+
+.panel--snapshot {
+    overflow: hidden;
+    background: radial-gradient(900px 420px at 10% 0%, rgba(255, 255, 255, 0.08), transparent 60%),
+        radial-gradient(900px 420px at 90% 70%, rgba(255, 255, 255, 0.05), transparent 60%),
+        linear-gradient(180deg, rgba(255, 255, 255, 0.06), rgba(255, 255, 255, 0.02));
+}
+
+.panel__title {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: 850;
+    font-size: 12px;
+    letter-spacing: 0.9px;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.86);
+}
+
+.panel__title::before {
+    content: "";
+    width: 10px;
+    height: 10px;
+    border-radius: 99px;
+    background: rgba(255, 255, 255, 0.92);
+    box-shadow: 0 0 0 4px rgba(255, 255, 255, 0.08);
+    flex: 0 0 auto;
+}
+
+.panel--snapshot .panel__title {
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .panel__row {
@@ -497,11 +536,80 @@ svg {
     margin-top: 14px;
 }
 
+.panel__meta--about {
+    grid-template-columns: 1fr;
+    gap: 12px;
+    margin-top: 0;
+}
+
 .meta {
     border-radius: 14px;
     border: 1px solid rgba(255, 255, 255, 0.12);
     background: rgba(255, 255, 255, 0.03);
     padding: 12px;
+}
+
+.meta--split {
+    position: relative;
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 14px;
+    padding: 14px 14px 14px 44px;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.06), rgba(255, 255, 255, 0.03));
+    transition: background 150ms ease, border-color 150ms ease;
+}
+
+.meta--split::before {
+    content: "";
+    position: absolute;
+    left: 14px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 10px;
+    height: 10px;
+    border-radius: 99px;
+    background: rgba(255, 255, 255, 0.92);
+    box-shadow: 0 0 0 4px rgba(255, 255, 255, 0.08);
+}
+
+.panel--snapshot .panel__meta--about .meta--split:not(:last-child)::after {
+    content: "";
+    position: absolute;
+    left: 19px;
+    top: calc(50% + 10px);
+    bottom: -12px;
+    width: 1px;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.22), transparent);
+}
+
+.meta--split:hover {
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.08), rgba(255, 255, 255, 0.04));
+}
+
+.panel--snapshot .meta__k {
+    font-size: 22px;
+    font-weight: 950;
+    letter-spacing: -0.4px;
+}
+
+.panel--snapshot .meta--split .meta__v {
+    text-transform: uppercase;
+    letter-spacing: 0.9px;
+    font-weight: 800;
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.68);
+}
+
+.panel__meta--about .meta--split:nth-child(2)::before {
+    background: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.85);
+    box-shadow: 0 0 0 4px rgba(255, 255, 255, 0.06);
+}
+
+.panel__meta--about .meta--split:nth-child(3)::before {
+    background: rgba(255, 255, 255, 0.35);
+    box-shadow: 0 0 0 4px rgba(255, 255, 255, 0.08);
 }
 
 .meta__k {
@@ -515,6 +623,12 @@ svg {
     font-size: 13px;
     color: var(--muted);
     line-height: 1.35;
+}
+
+.meta--split .meta__v {
+    margin-top: 0;
+    text-align: right;
+    max-width: 24ch;
 }
 
 .hero__fade {
@@ -554,6 +668,11 @@ svg {
     background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.22), transparent);
 }
 
+.sectionDivider--lg {
+    margin-top: 44px;
+    margin-bottom: 18px;
+}
+
 .sectionDivider::after {
     content: "";
     display: block;
@@ -566,6 +685,10 @@ svg {
 
 .impact--spaced {
     margin-top: 22px;
+}
+
+.impact--xl {
+    margin-top: 44px;
 }
 
 .subnav {
@@ -935,6 +1058,10 @@ svg {
     flex-wrap: wrap;
 }
 
+.impact__row {
+    margin-top: 14px;
+}
+
 .impact__stats {
     display: grid;
     gap: 12px;
@@ -945,6 +1072,21 @@ svg {
     border: 1px solid rgba(255, 255, 255, 0.12);
     background: rgba(0, 0, 0, 0.2);
     padding: 16px;
+    position: relative;
+    overflow: hidden;
+}
+
+.stat::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(260px 120px at 20% 0%, rgba(255, 255, 255, 0.08), transparent 60%);
+    opacity: 0.9;
+    pointer-events: none;
+}
+
+.stat > * {
+    position: relative;
 }
 
 .stat__k {
