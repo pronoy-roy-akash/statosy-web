@@ -129,42 +129,91 @@
             </div>
 
             <div class="cards">
-                <div class="card">
+                <a class="card" href="{{ route('solutions.software-development') }}">
                     <div class="icon" aria-hidden="true">@include('partials.icons.code')</div>
                     <div class="card__t">Software Development</div>
                     <div class="card__d">Build cloud-ready products, internal tools, and platforms with quality-first
                         engineering.</div>
-                </div>
-                <div class="card">
+                </a>
+                <a class="card" href="{{ route('solutions.software-management') }}">
                     <div class="icon" aria-hidden="true">@include('partials.icons.layers')</div>
                     <div class="card__t">Software Management</div>
                     <div class="card__d">Delivery management, release planning, and execution support for predictable
                         outcomes.</div>
-                </div>
-                <div class="card">
+                </a>
+                <a class="card" href="{{ route('solutions.cyber-security-services') }}">
                     <div class="icon" aria-hidden="true">@include('partials.icons.shield')</div>
                     <div class="card__t">Cyber Security</div>
                     <div class="card__d">Security reviews, hardening, and incident-ready practices without slowing
                         delivery.</div>
-                </div>
-                <div class="card">
+                </a>
+                <a class="card" href="{{ route('solutions.it-consulting') }}">
                     <div class="icon" aria-hidden="true">@include('partials.icons.chat')</div>
                     <div class="card__t">IT Consulting</div>
                     <div class="card__d">Architecture, cloud strategy, and roadmap guidance grounded in your goals and
                         constraints.</div>
-                </div>
-                <div class="card">
+                </a>
+                <a class="card" href="{{ route('solutions.cloud-management') }}">
                     <div class="icon" aria-hidden="true">@include('partials.icons.cloud')</div>
                     <div class="card__t">Cloud Management</div>
                     <div class="card__d">We operate and optimize cloud and servers so you can focus on growth and product.
                     </div>
-                </div>
-                <div class="card">
+                </a>
+                <a class="card" href="{{ route('solutions.customer-support-services') }}">
                     <div class="icon" aria-hidden="true">@include('partials.icons.support')</div>
                     <div class="card__t">Customer Support</div>
                     <div class="card__d">Support workflows and escalation paths designed for fast resolution and
                         transparency.</div>
-                </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="section section--tight" id="industries">
+        <div class="container">
+            <div class="section__head">
+                <h2 class="h2">Industries we support</h2>
+                <p class="muted">Delivery and operations designed for real constraints: security, compliance, uptime, and
+                    user experience.</p>
+            </div>
+
+            <div class="cards">
+                <a class="card" href="{{ route('industries.end-user-products') }}">
+                    <div class="icon" aria-hidden="true">@include('partials.icons.code')</div>
+                    <div class="card__t">End User Products</div>
+                    <div class="card__d">Build and operate apps customers rely on, with performance and availability as
+                        defaults.</div>
+                </a>
+                <a class="card" href="{{ route('industries.government-and-public') }}">
+                    <div class="icon" aria-hidden="true">@include('partials.icons.layers')</div>
+                    <div class="card__t">Government And Public</div>
+                    <div class="card__d">Secure, resilient platforms for public services with clear governance and
+                        supportability.</div>
+                </a>
+                <a class="card" href="{{ route('industries.education-and-non-profit') }}">
+                    <div class="icon" aria-hidden="true">@include('partials.icons.support')</div>
+                    <div class="card__t">Education And Non-Profit</div>
+                    <div class="card__d">Dependable systems that keep learners and communities supported during peak
+                        usage.</div>
+                </a>
+                <a class="card" href="{{ route('industries.banking-and-finance') }}">
+                    <div class="icon" aria-hidden="true">@include('partials.icons.shield')</div>
+                    <div class="card__t">Banking And Finance</div>
+                    <div class="card__d">Security-first delivery for sensitive workloads, uptime, and compliance-minded
+                        operations.</div>
+                </a>
+                <a class="card" href="{{ route('industries.energy-and-utilities') }}">
+                    <div class="icon" aria-hidden="true">@include('partials.icons.cloud')</div>
+                    <div class="card__t">Energy And Utilities</div>
+                    <div class="card__d">High availability operations, monitoring, and incident readiness for critical
+                        services.</div>
+                </a>
+                <a class="card" href="{{ route('industries.legal-and-law-firms') }}">
+                    <div class="icon" aria-hidden="true">@include('partials.icons.chat')</div>
+                    <div class="card__t">Legal And Law Firms</div>
+                    <div class="card__d">Confidential workflows with practical security hardening and reliable support
+                        paths.</div>
+                </a>
             </div>
         </div>
     </section>
