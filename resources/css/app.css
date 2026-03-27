@@ -1784,6 +1784,42 @@ textarea:focus {
         padding: 22px;
     }
 
+    .footer__hero {
+        padding: 18px;
+        gap: 16px;
+    }
+
+    .footer__heroCopy {
+        max-width: none;
+    }
+
+    .footer__heroActions {
+        width: 100%;
+    }
+
+    .footer__heroActions .btn {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .footer__main {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 16px;
+    }
+
+    .footer__col--brand,
+    .footer__col--contact {
+        grid-column: 1 / -1;
+    }
+
+    .footer__statRow {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .footer__bottom {
+        flex-direction: column;
+    }
+
     .nav__toggle {
         display: inline-flex;
         align-items: center;
