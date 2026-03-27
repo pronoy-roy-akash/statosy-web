@@ -148,3 +148,12 @@ if (header) {
 
     update();
 }
+
+document.addEventListener('click', (e) => {
+    const input = e.target.closest('input[data-show-picker]');
+    if (!input) return;
+    if (typeof input.showPicker !== 'function') return;
+    try {
+        input.showPicker();
+    } catch {}
+});

@@ -169,14 +169,14 @@
                             </div>
                             <div class="field">
                                 <label for="meeting_date">Preferred date</label>
-                                <input id="meeting_date" name="meeting_date" type="date" required>
+                                <input id="meeting_date" name="meeting_date" type="date" data-show-picker required>
                                 @error('meeting_date')
                                     <div class="error">{{ $message }}</div>
                                 @enderror
                             </div>
                             <div class="field">
                                 <label for="meeting_time">Preferred time</label>
-                                <input id="meeting_time" name="meeting_time" type="time" required>
+                                <input id="meeting_time" name="meeting_time" type="time" data-show-picker required>
                                 @error('meeting_time')
                                     <div class="error">{{ $message }}</div>
                                 @enderror
@@ -197,4 +197,3 @@
         </div>
     </section>
 @endsection
-
