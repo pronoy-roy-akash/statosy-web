@@ -1,7 +1,8 @@
 @extends('frontend.layout.template')
 
 @section('title', 'Statosy — IT Solutions')
-@section('description', 'IT solutions from Statosy: software development, management, cyber security, consulting, cloud management, and support.')
+@section('description', 'IT solutions from Statosy: software development, management, cyber security, consulting, cloud
+    management, and support.')
 
 @section('content')
     <section class="hero">
@@ -9,10 +10,11 @@
             <div class="hero__copy">
                 <div class="eyebrow">{{ $kicker }}</div>
                 <h1 class="h1">{{ $title }}</h1>
-                <p class="lead">Offer the latest software and solutions to our customers. Easy solutions for difficult IT problems to ensure high availability.</p>
+                <p class="lead">Offer the latest software and solutions to our customers. Easy solutions for difficult IT
+                    problems to ensure high availability.</p>
                 <div class="hero__cta">
-                    <a class="btn btn--primary" href="{{ route('home') }}#contact">Request a quote</a>
-                    <a class="btn btn--ghost" href="{{ route('home') }}#services">Service overview</a>
+                    <a class="btn btn--primary" href="{{ route('contact-us') }}#message">Send a message</a>
+                    <a class="btn btn--ghost" href="{{ route('contact-us') }}#schedule">Schedule a meeting</a>
                 </div>
             </div>
             <div class="hero__visual hero__visual--about" aria-hidden="true">
@@ -41,7 +43,8 @@
         <div class="container">
             <div class="section__head">
                 <h2 class="h2">By our IT solutions</h2>
-                <p class="muted">Improve efficiency and provide better experience with practical engineering and operations.</p>
+                <p class="muted">Improve efficiency and provide better experience with practical engineering and
+                    operations.</p>
             </div>
             <div class="cards">
                 <div class="card">

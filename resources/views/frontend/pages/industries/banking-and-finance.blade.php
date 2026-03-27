@@ -13,8 +13,8 @@
                 <p class="lead">Banking and finance software built with precision and security—protecting sensitive data,
                     supporting critical workflows, and staying available under real-world load.</p>
                 <div class="hero__cta">
-                    <a class="btn btn--primary" href="{{ route('home') }}#contact">Request a quote</a>
-                    <a class="btn btn--ghost" href="{{ route('solutions.cyber-security-services') }}">Cyber security</a>
+                    <a class="btn btn--primary" href="{{ route('contact-us') }}#message">Send a message</a>
+                    <a class="btn btn--ghost" href="{{ route('contact-us') }}#schedule">Schedule a meeting</a>
                 </div>
             </div>
             <div class="hero__visual hero__visual--about" aria-hidden="true">

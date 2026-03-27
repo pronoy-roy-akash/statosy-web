@@ -21,8 +21,8 @@
                     <div class="awardNote__fine">Soon, these empty slots won’t be empty. Hold us to it.</div>
                 </div>
                 <div class="hero__cta">
-                    <a class="btn btn--primary" href="{{ route('home') }}#contact">Start a project</a>
-                    <a class="btn btn--ghost" href="{{ route('company.about') }}">About Statosy</a>
+                    <a class="btn btn--primary" href="{{ route('contact-us') }}#message">Send a message</a>
+                    <a class="btn btn--ghost" href="{{ route('contact-us') }}#schedule">Schedule a meeting</a>
                 </div>
             </div>
             <div class="hero__visual" aria-hidden="true">

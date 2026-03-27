@@ -14,8 +14,8 @@
                 <p class="lead">Statosy is a cloud services and software company focused on reliability, security, and high
                     availability—built by a team that cares about outcomes.</p>
                 <div class="hero__cta">
-                    <a class="btn btn--primary" href="{{ route('home') }}#contact">Let’s talk</a>
-                    <a class="btn btn--ghost" href="{{ route('solutions.index') }}">Explore solutions</a>
+                    <a class="btn btn--primary" href="{{ route('contact-us') }}#message">Let's Talk</a>
+                    <a class="btn btn--ghost" href="{{ route('contact-us') }}#schedule">Schedule a meeting</a>
                 </div>
             </div>
 

@@ -12,8 +12,8 @@
                 <p class="lead">We take care of your customers on behalf of you with 24/7 availability—support workflows
                     aligned to your service reliability goals.</p>
                 <div class="hero__cta">
-                    <a class="btn btn--primary" href="{{ route('home') }}#contact">Contact support</a>
-                    <a class="btn btn--ghost" href="{{ route('solutions.software-management') }}">Software management</a>
+                    <a class="btn btn--primary" href="{{ route('contact-us') }}#message">Send a message</a>
+                    <a class="btn btn--ghost" href="{{ route('contact-us') }}#schedule">Schedule a meeting</a>
                 </div>
             </div>
             <div class="hero__visual hero__visual--about" aria-hidden="true">

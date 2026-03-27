@@ -14,8 +14,8 @@
                     you make better decisions, implement the right solutions, and keep delivery grounded in real
                     business goals.</p>
                 <div class="hero__cta">
-                    <a class="btn btn--primary" href="{{ route('home') }}#contact">Book a consultation</a>
-                    <a class="btn btn--ghost" href="{{ route('solutions.cloud-management') }}">Cloud management</a>
+                    <a class="btn btn--primary" href="{{ route('contact-us') }}#message">Send a message</a>
+                    <a class="btn btn--ghost" href="{{ route('contact-us') }}#schedule">Schedule a meeting</a>
                 </div>
             </div>
             <div class="hero__visual hero__visual--about" aria-hidden="true">

@@ -1,7 +1,8 @@
 @extends('frontend.layout.template')
 
 @section('title', 'Statosy — End User Products')
-@section('description', 'Industry solutions for end user products: reliable platforms, secure operations, and better user experience.')
+@section('description', 'Industry solutions for end user products: reliable platforms, secure operations, and better
+    user experience.')
 
 @section('content')
     <section class="hero">
@@ -12,8 +13,8 @@
                 <p class="lead">We design, develop, and manage your product software behind the scenes so you can focus on
                     growth and customer satisfaction—without compromising on security or availability.</p>
                 <div class="hero__cta">
-                    <a class="btn btn--primary" href="{{ route('home') }}#contact">Let’s talk</a>
-                    <a class="btn btn--ghost" href="{{ route('solutions.software-development') }}">Software development</a>
+                    <a class="btn btn--primary" href="{{ route('contact-us') }}#message">Send a message</a>
+                    <a class="btn btn--ghost" href="{{ route('contact-us') }}#schedule">Schedule a meeting</a>
                 </div>
             </div>
             <div class="hero__visual hero__visual--about" aria-hidden="true">
@@ -55,7 +56,8 @@
                 <div class="step">
                     <div class="step__n">02</div>
                     <div class="step__t">Build</div>
-                    <div class="step__d">Deliver pixel-clean UI and dependable systems with security-first engineering.</div>
+                    <div class="step__d">Deliver pixel-clean UI and dependable systems with security-first engineering.
+                    </div>
                 </div>
                 <div class="step">
                     <div class="step__n">03</div>

@@ -1,7 +1,8 @@
 @extends('frontend.layout.template')
 
 @section('title', 'Statosy — Government And Public')
-@section('description', 'Industry solutions for government and public sector: secure systems, compliance-minded
+@section('description',
+    'Industry solutions for government and public sector: secure systems, compliance-minded
     delivery, and high availability.')
 
 @section('content')
@@ -13,8 +14,8 @@
                 <p class="lead">We help government and public sector teams improve IT services through secure delivery and
                     modern operations—transforming public access with practical innovation.</p>
                 <div class="hero__cta">
-                    <a class="btn btn--primary" href="{{ route('home') }}#contact">Request a quote</a>
-                    <a class="btn btn--ghost" href="{{ route('solutions.cyber-security-services') }}">Cyber security</a>
+                    <a class="btn btn--primary" href="{{ route('contact-us') }}#message">Send a message</a>
+                    <a class="btn btn--ghost" href="{{ route('contact-us') }}#schedule">Schedule a meeting</a>
                 </div>
             </div>
             <div class="hero__visual hero__visual--about" aria-hidden="true">

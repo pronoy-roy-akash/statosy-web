@@ -13,8 +13,8 @@
                 <p class="lead">Pixel-perfect web and mobile apps delivered with speed and discipline—secure, scalable, and
                     built for long-term maintainability.</p>
                 <div class="hero__cta">
-                    <a class="btn btn--primary" href="{{ route('home') }}#contact">Request a quote</a>
-                    <a class="btn btn--ghost" href="{{ route('home') }}#services">View all services</a>
+                    <a class="btn btn--primary" href="{{ route('contact-us') }}#message">Send a message</a>
+                    <a class="btn btn--ghost" href="{{ route('contact-us') }}#schedule">Schedule a meeting</a>
                 </div>
             </div>
             <div class="hero__visual hero__visual--about" aria-hidden="true">

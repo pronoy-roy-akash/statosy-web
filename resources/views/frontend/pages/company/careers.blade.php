@@ -8,10 +8,11 @@
         <div class="container hero__grid">
             <div class="hero__copy">
                 <h1 class="h1">{{ $title }}</h1>
-                <p class="lead">Accelerate your career now. Join a team that values quality, ethics, and real impact—building secure and highly available software.</p>
+                <p class="lead">Accelerate your career now. Join a team that values quality, ethics, and real
+                    impact—building secure and highly available software.</p>
                 <div class="hero__cta">
-                    <a class="btn btn--primary" href="{{ route('home') }}#contact">Apply now</a>
-                    <a class="btn btn--ghost" href="{{ route('company.about') }}">Learn about Statosy</a>
+                    <a class="btn btn--primary" href="{{ route('contact-us') }}#message">Send a message</a>
+                    <a class="btn btn--ghost" href="{{ route('contact-us') }}#schedule">Schedule a meeting</a>
                 </div>
             </div>
             <div class="hero__visual hero__visual--about" aria-hidden="true">
@@ -40,7 +41,8 @@
         <div class="container">
             <div class="section__head">
                 <h2 class="h2">What you will work on</h2>
-                <p class="muted">Practical projects with measurable outcomes—delivered with strong engineering standards.</p>
+                <p class="muted">Practical projects with measurable outcomes—delivered with strong engineering standards.
+                </p>
             </div>
             <div class="cards">
                 <div class="card">
@@ -134,7 +136,8 @@
                         <span class="job__meta">Full-time • Remote</span>
                     </summary>
                     <div class="job__body">
-                        <div class="muted">Support workflows aligned to reliability goals—fast response, clear communication,
+                        <div class="muted">Support workflows aligned to reliability goals—fast response, clear
+                            communication,
                             and ownership.</div>
                         <ul class="job__list">
                             <li>Handle incoming requests with clear triage and documentation.</li>
@@ -162,14 +165,15 @@
                 <div class="notice">{{ session('career_success') }}</div>
             @endif
 
-            <form class="form" method="post" action="{{ route('company.careers.apply') }}" enctype="multipart/form-data">
+            <form class="form" method="post" action="{{ route('company.careers.apply') }}"
+                enctype="multipart/form-data">
                 @csrf
 
                 <div class="form__grid">
                     <div class="field">
                         <label for="career_name">Name</label>
-                        <input id="career_name" name="name" type="text" value="{{ old('name') }}" autocomplete="name"
-                            required>
+                        <input id="career_name" name="name" type="text" value="{{ old('name') }}"
+                            autocomplete="name" required>
                         @error('name')
                             <div class="error">{{ $message }}</div>
                         @enderror
@@ -188,10 +192,14 @@
                         <label for="career_role">Designation</label>
                         <select id="career_role" name="role" required>
                             <option value="" @selected(old('role') === null || old('role') === '')>Select a role</option>
-                            <option value="Software Engineer (Backend)" @selected(old('role') === 'Software Engineer (Backend)')>Software Engineer (Backend)</option>
-                            <option value="Software Engineer (Frontend)" @selected(old('role') === 'Software Engineer (Frontend)')>Software Engineer (Frontend)</option>
-                            <option value="Cloud / DevOps Engineer" @selected(old('role') === 'Cloud / DevOps Engineer')>Cloud / DevOps Engineer</option>
-                            <option value="Customer Support Specialist" @selected(old('role') === 'Customer Support Specialist')>Customer Support Specialist</option>
+                            <option value="Software Engineer (Backend)" @selected(old('role') === 'Software Engineer (Backend)')>Software Engineer
+                                (Backend)</option>
+                            <option value="Software Engineer (Frontend)" @selected(old('role') === 'Software Engineer (Frontend)')>Software Engineer
+                                (Frontend)</option>
+                            <option value="Cloud / DevOps Engineer" @selected(old('role') === 'Cloud / DevOps Engineer')>Cloud / DevOps Engineer
+                            </option>
+                            <option value="Customer Support Specialist" @selected(old('role') === 'Customer Support Specialist')>Customer Support
+                                Specialist</option>
                         </select>
                         @error('role')
                             <div class="error">{{ $message }}</div>

@@ -12,8 +12,8 @@
                 <p class="lead">We manage your software delivery and IT operations so you can focus on building your
                     business—planning, execution, DevOps, and continuous improvement.</p>
                 <div class="hero__cta">
-                    <a class="btn btn--primary" href="{{ route('home') }}#contact">Talk to us</a>
-                    <a class="btn btn--ghost" href="{{ route('solutions.software-development') }}">Software development</a>
+                    <a class="btn btn--primary" href="{{ route('contact-us') }}#message">Send a message</a>
+                    <a class="btn btn--ghost" href="{{ route('contact-us') }}#schedule">Schedule a meeting</a>
                 </div>
             </div>
             <div class="hero__visual hero__visual--about" aria-hidden="true">

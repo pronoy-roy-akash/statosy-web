@@ -13,8 +13,8 @@
                 <p class="lead">Protect your IT infrastructure from cyber threats with practical security that fits real
                     delivery. We help you assess risk, harden systems, and improve detection and response readiness.</p>
                 <div class="hero__cta">
-                    <a class="btn btn--primary" href="{{ route('home') }}#contact">Security review</a>
-                    <a class="btn btn--ghost" href="{{ route('solutions.cloud-management') }}">Cloud management</a>
+                    <a class="btn btn--primary" href="{{ route('contact-us') }}#message">Send a message</a>
+                    <a class="btn btn--ghost" href="{{ route('contact-us') }}#schedule">Schedule a meeting</a>
                 </div>
             </div>
             <div class="hero__visual hero__visual--about" aria-hidden="true">
