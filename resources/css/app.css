@@ -1494,7 +1494,7 @@ textarea:focus {
 }
 
 .footer__logo {
-    height: 44px;
+    height: clamp(44px, 7vw, 63px) !important;
     width: auto;
     display: block;
     border-radius: 12px;
@@ -1729,6 +1729,10 @@ textarea:focus {
         grid-template-columns: 1fr;
     }
 
+    .form__grid {
+        grid-template-columns: 1fr;
+    }
+
     .ctaDuo {
         grid-template-columns: 1fr;
     }
@@ -1750,6 +1754,10 @@ textarea:focus {
         align-items: stretch;
     }
 
+    .footer__heroActions {
+        justify-content: flex-start;
+    }
+
     .footer__main {
         grid-template-columns: 1fr;
     }
@@ -1760,6 +1768,22 @@ textarea:focus {
 }
 
 @media (max-width: 720px) {
+    .hero {
+        padding: 56px 0 22px;
+    }
+
+    .hero__visual {
+        min-height: auto;
+    }
+
+    .hero__visual--about {
+        padding-top: 26px;
+    }
+
+    .thanks {
+        padding: 22px;
+    }
+
     .nav__toggle {
         display: inline-flex;
         align-items: center;
@@ -1787,6 +1811,24 @@ textarea:focus {
     .nav__links a {
         padding: 12px 12px;
         border-radius: 14px;
+    }
+
+    .nav__links .nav__contactBtn {
+        background: transparent;
+        border: 0;
+        box-shadow: none;
+        color: rgba(255, 255, 255, 0.78);
+        font-weight: 520;
+        font-size: 15px;
+        padding: 12px 12px;
+        border-radius: 14px;
+        display: block;
+        text-align: left;
+    }
+
+    .nav__links .nav__contactBtn:hover {
+        color: rgba(255, 255, 255, 0.95);
+        background: rgba(255, 255, 255, 0.06);
     }
 
     .nav__item {
