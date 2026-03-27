@@ -57,15 +57,43 @@ class SiteController extends Controller
             'email' => ['required', 'email', 'max:190'],
             'company' => ['nullable', 'string', 'max:190'],
             'topic' => ['nullable', 'string', 'max:120'],
-            'message' => ['required', 'string', 'max:4000'],
+            'meeting_date' => ['nullable', 'date'],
+            'meeting_time' => ['nullable', 'date_format:H:i'],
+            'message' => ['nullable', 'string', 'max:4000', 'required_without_all:meeting_date,meeting_time'],
         ]);
 
-        ContactMessage::create($validated + [
+        $message = $validated['message'] ?? '';
+
+        if (!empty($validated['meeting_date']) || !empty($validated['meeting_time'])) {
+            $meetingLine = trim(
+                'Preferred schedule: ' .
+                    ($validated['meeting_date'] ?? '') .
+                    (!empty($validated['meeting_time']) ? ' ' . $validated['meeting_time'] : '')
+            );
+
+            $message = trim($message);
+            $message = $message !== '' ? $message . "\n\n" . $meetingLine : $meetingLine;
+        }
+
+        ContactMessage::create([
+            'name' => $validated['name'],
+            'email' => $validated['email'],
+            'company' => $validated['company'] ?? null,
+            'topic' => $validated['topic'] ?? null,
+            'message' => $message,
             'ip' => $request->ip(),
             'user_agent' => $request->userAgent(),
         ]);
 
         return redirect()->route('thank-you');
+    }
+
+    public function contactUs(): View
+    {
+        return view('frontend.pages.contact-us', [
+            'kicker' => 'Contact',
+            'title' => 'Contact us',
+        ]);
     }
 
     public function careerApply(Request $request): RedirectResponse

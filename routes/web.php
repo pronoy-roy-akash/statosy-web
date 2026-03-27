@@ -15,6 +15,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', [SiteController::class, 'index'])->name('home');
+Route::get('/contact-us', [SiteController::class, 'contactUs'])->name('contact-us');
 Route::post('/contact', [SiteController::class, 'contact'])->name('contact');
 Route::get('/thank-you', [SiteController::class, 'thankYou'])->name('thank-you');
 

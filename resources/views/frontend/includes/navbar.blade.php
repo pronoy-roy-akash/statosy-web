@@ -62,7 +62,7 @@
                 </div>
             </div>
             <a href="{{ route('company.careers') }}">Careers</a>
-            <a class="btn btn--primary" href="#contact">Let’s talk</a>
+            <a class="btn btn--primary nav__contactBtn" href="{{ route('contact-us') }}">Contact us</a>
         </nav>
     </div>
 </header>
