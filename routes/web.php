@@ -22,6 +22,7 @@ Route::prefix('company')->name('company.')->group(function () {
     Route::get('/about-us', [SiteController::class, 'page'])->defaults('page', 'company.about-us')->name('about');
     Route::get('/awards-recognition', [SiteController::class, 'page'])->defaults('page', 'company.awards-recognition')->name('awards');
     Route::get('/careers', [SiteController::class, 'page'])->defaults('page', 'company.careers')->name('careers');
+    Route::post('/careers/apply', [SiteController::class, 'careerApply'])->name('careers.apply');
     Route::get('/case-studies', [SiteController::class, 'page'])->defaults('page', 'company.case-studies')->name('case-studies');
     Route::get('/news', [SiteController::class, 'page'])->defaults('page', 'company.news')->name('news');
 });

@@ -1177,7 +1177,8 @@ svg {
 }
 
 input,
-textarea {
+textarea,
+select {
     width: 100%;
     border-radius: 14px;
     border: 1px solid rgba(255, 255, 255, 0.14);
@@ -1187,6 +1188,16 @@ textarea {
     font-family: inherit;
     font-size: 14px;
     outline: none;
+}
+
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+input[type="file"] {
+    padding: 10px 12px;
 }
 
 textarea {
@@ -1204,6 +1215,72 @@ textarea:focus {
     color: rgba(255, 255, 255, 0.85);
     font-size: 13px;
     line-height: 1.35;
+}
+
+.notice {
+    border-radius: 18px;
+    border: 1px solid rgba(255, 255, 255, 0.14);
+    background: rgba(255, 255, 255, 0.04);
+    padding: 14px 16px;
+    margin-bottom: 14px;
+    color: rgba(255, 255, 255, 0.86);
+    font-weight: 650;
+}
+
+.jobs {
+    display: grid;
+    gap: 12px;
+}
+
+.job {
+    border-radius: 18px;
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.06), rgba(255, 255, 255, 0.03));
+    overflow: hidden;
+}
+
+.job__summary {
+    list-style: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 14px;
+    padding: 16px 18px;
+}
+
+.job__summary::-webkit-details-marker {
+    display: none;
+}
+
+.job__title {
+    font-weight: 850;
+    letter-spacing: -0.2px;
+}
+
+.job__meta {
+    color: rgba(255, 255, 255, 0.65);
+    font-size: 13px;
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    background: rgba(0, 0, 0, 0.18);
+    padding: 6px 10px;
+    border-radius: 999px;
+    white-space: nowrap;
+}
+
+.job__body {
+    padding: 0 18px 18px;
+}
+
+.job__list {
+    margin: 12px 0 0;
+    padding-left: 18px;
+    color: rgba(255, 255, 255, 0.76);
+    line-height: 1.7;
+}
+
+.job__cta {
+    margin-top: 14px;
 }
 
 .form__fine {

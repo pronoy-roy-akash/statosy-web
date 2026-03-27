@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\ContactMessage;
+use App\Models\JobApplication;
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
 use Illuminate\View\View;
@@ -65,6 +66,31 @@ class SiteController extends Controller
         ]);
 
         return redirect()->route('thank-you');
+    }
+
+    public function careerApply(Request $request): RedirectResponse
+    {
+        $validated = $request->validate([
+            'name' => ['required', 'string', 'max:120'],
+            'email' => ['required', 'email', 'max:190'],
+            'role' => ['required', 'string', 'max:140'],
+            'message' => ['nullable', 'string', 'max:2000'],
+            'resume' => ['required', 'file', 'max:2048', 'mimes:pdf,doc,docx'],
+        ]);
+
+        $resumePath = $request->file('resume')->store('job-applications');
+
+        JobApplication::create([
+            'name' => $validated['name'],
+            'email' => $validated['email'],
+            'role' => $validated['role'],
+            'message' => $validated['message'] ?? null,
+            'resume_path' => $resumePath,
+            'ip' => $request->ip(),
+            'user_agent' => $request->userAgent(),
+        ]);
+
+        return back()->with('career_success', 'Resume submitted. Our team will reach out if there is a match.');
     }
 
     public function thankYou(): View
