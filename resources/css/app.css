@@ -41,6 +41,12 @@ a {
     text-decoration: none;
 }
 
+a:focus-visible {
+    outline: none;
+    box-shadow: 0 0 0 4px rgba(255, 255, 255, 0.12);
+    border-radius: 10px;
+}
+
 img,
 svg {
     display: block;
@@ -317,6 +323,23 @@ svg {
     font-size: 14px;
     gap: 10px;
     cursor: pointer;
+    transition: background 160ms ease, border-color 160ms ease, transform 160ms ease, box-shadow 160ms ease,
+        color 160ms ease;
+    transform: translateY(0);
+}
+
+.btn:hover {
+    transform: translateY(-1px);
+}
+
+.btn:active {
+    transform: translateY(0);
+}
+
+.btn:focus-visible {
+    outline: none;
+    border-color: rgba(255, 255, 255, 0.7);
+    box-shadow: 0 0 0 4px rgba(255, 255, 255, 0.16);
 }
 
 .btn--primary {
@@ -328,6 +351,10 @@ svg {
 
 .btn--primary:hover {
     background: rgba(255, 255, 255, 1);
+}
+
+.btn--primary:focus-visible {
+    box-shadow: 0 0 0 4px rgba(255, 255, 255, 0.16), 0 12px 35px rgba(0, 0, 0, 0.55);
 }
 
 .btn--ghost:hover {
@@ -1035,10 +1062,24 @@ svg {
     padding: 18px;
     min-height: 148px;
     display: block;
+    transition: transform 160ms ease, border-color 160ms ease, background 160ms ease, box-shadow 160ms ease;
 }
 
 .cards a.card {
     cursor: pointer;
+}
+
+.cards a.card:hover {
+    transform: translateY(-3px);
+    border-color: rgba(255, 255, 255, 0.18);
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.08), rgba(255, 255, 255, 0.03));
+    box-shadow: 0 18px 50px rgba(0, 0, 0, 0.55);
+}
+
+.cards a.card:focus-visible {
+    outline: none;
+    box-shadow: 0 0 0 4px rgba(255, 255, 255, 0.14), 0 18px 50px rgba(0, 0, 0, 0.55);
+    border-color: rgba(255, 255, 255, 0.22);
 }
 
 .card__t {
@@ -1063,6 +1104,13 @@ svg {
     display: grid;
     place-items: center;
     color: rgba(255, 255, 255, 0.86);
+    transition: transform 160ms ease, border-color 160ms ease, background 160ms ease;
+}
+
+.cards a.card:hover .icon {
+    transform: translateY(-1px);
+    border-color: rgba(255, 255, 255, 0.2);
+    background: radial-gradient(26px 26px at 30% 25%, rgba(255, 255, 255, 0.14), rgba(255, 255, 255, 0.04));
 }
 
 .impact {
@@ -1906,5 +1954,24 @@ textarea:focus {
 
     .contactHub {
         grid-template-columns: 1fr;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
+
+    .nav,
+    .btn,
+    .card,
+    .icon {
+        transition: none !important;
+    }
+
+    .btn:hover,
+    .cards a.card:hover,
+    .cards a.card:hover .icon {
+        transform: none;
     }
 }
