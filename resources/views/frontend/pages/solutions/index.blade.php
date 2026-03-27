@@ -15,18 +15,18 @@
                     <a class="btn btn--ghost" href="{{ route('home') }}#services">Service overview</a>
                 </div>
             </div>
-            <div class="hero__visual" aria-hidden="true">
-                <div class="panel">
-                    <div class="panel__meta">
-                        <div class="meta">
+            <div class="hero__visual hero__visual--about" aria-hidden="true">
+                <div class="panel panel--snapshot">
+                    <div class="panel__meta panel__meta--about">
+                        <div class="meta meta--split">
                             <div class="meta__k">Build</div>
                             <div class="meta__v">Software development and delivery</div>
                         </div>
-                        <div class="meta">
+                        <div class="meta meta--split">
                             <div class="meta__k">Protect</div>
                             <div class="meta__v">Cyber security and hardening</div>
                         </div>
-                        <div class="meta">
+                        <div class="meta meta--split">
                             <div class="meta__k">Operate</div>
                             <div class="meta__v">Cloud management and support</div>
                         </div>
@@ -78,4 +78,3 @@
         </div>
     </section>
 @endsection
-

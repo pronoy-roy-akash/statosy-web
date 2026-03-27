@@ -15,18 +15,18 @@
                     <a class="btn btn--ghost" href="{{ route('solutions.cloud-management') }}">Cloud management</a>
                 </div>
             </div>
-            <div class="hero__visual" aria-hidden="true">
-                <div class="panel">
-                    <div class="panel__meta">
-                        <div class="meta">
+            <div class="hero__visual hero__visual--about" aria-hidden="true">
+                <div class="panel panel--snapshot">
+                    <div class="panel__meta panel__meta--about">
+                        <div class="meta meta--split">
                             <div class="meta__k">Availability</div>
                             <div class="meta__v">Resilient service design</div>
                         </div>
-                        <div class="meta">
+                        <div class="meta meta--split">
                             <div class="meta__k">Monitoring</div>
                             <div class="meta__v">Actionable operational insights</div>
                         </div>
-                        <div class="meta">
+                        <div class="meta meta--split">
                             <div class="meta__k">Security</div>
                             <div class="meta__v">Safe access and hardened systems</div>
                         </div>
@@ -63,4 +63,3 @@
         </div>
     </section>
 @endsection
-

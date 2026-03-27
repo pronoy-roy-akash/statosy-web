@@ -15,18 +15,18 @@
                     <a class="btn btn--ghost" href="{{ route('solutions.it-consulting') }}">IT consulting</a>
                 </div>
             </div>
-            <div class="hero__visual" aria-hidden="true">
-                <div class="panel">
-                    <div class="panel__meta">
-                        <div class="meta">
+            <div class="hero__visual hero__visual--about" aria-hidden="true">
+                <div class="panel panel--snapshot">
+                    <div class="panel__meta panel__meta--about">
+                        <div class="meta meta--split">
                             <div class="meta__k">Access</div>
                             <div class="meta__v">Secure identity and permissions</div>
                         </div>
-                        <div class="meta">
+                        <div class="meta meta--split">
                             <div class="meta__k">Efficiency</div>
                             <div class="meta__v">Better processes and outcomes</div>
                         </div>
-                        <div class="meta">
+                        <div class="meta meta--split">
                             <div class="meta__k">Availability</div>
                             <div class="meta__v">Reliable services during peak times</div>
                         </div>
@@ -63,4 +63,3 @@
         </div>
     </section>
 @endsection
-

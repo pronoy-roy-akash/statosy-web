@@ -15,23 +15,23 @@
                     <a class="btn btn--ghost" href="{{ route('solutions.cloud-management') }}">Cloud management</a>
                 </div>
             </div>
-            <div class="hero__visual" aria-hidden="true">
-                <div class="panel">
+            <div class="hero__visual hero__visual--about" aria-hidden="true">
+                <div class="panel panel--snapshot">
                     <div class="panel__row">
                         <div class="chip"><div class="chip__dot"></div><div class="chip__txt">Hardening</div></div>
                         <div class="chip"><div class="chip__dot chip__dot--ring"></div><div class="chip__txt">Audit</div></div>
                         <div class="chip"><div class="chip__dot chip__dot--soft"></div><div class="chip__txt">Response</div></div>
                     </div>
-                    <div class="panel__meta">
-                        <div class="meta">
+                    <div class="panel__meta panel__meta--about">
+                        <div class="meta meta--split">
                             <div class="meta__k">Risk</div>
                             <div class="meta__v">Reduce attack surface and misconfiguration</div>
                         </div>
-                        <div class="meta">
+                        <div class="meta meta--split">
                             <div class="meta__k">Continuity</div>
                             <div class="meta__v">Keep services available</div>
                         </div>
-                        <div class="meta">
+                        <div class="meta meta--split">
                             <div class="meta__k">Trust</div>
                             <div class="meta__v">Security as an enabler</div>
                         </div>
@@ -68,4 +68,3 @@
         </div>
     </section>
 @endsection
-

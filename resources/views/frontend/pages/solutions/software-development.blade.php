@@ -15,23 +15,23 @@
                     <a class="btn btn--ghost" href="{{ route('home') }}#services">View all services</a>
                 </div>
             </div>
-            <div class="hero__visual" aria-hidden="true">
-                <div class="panel">
+            <div class="hero__visual hero__visual--about" aria-hidden="true">
+                <div class="panel panel--snapshot">
                     <div class="panel__row">
                         <div class="chip"><div class="chip__dot"></div><div class="chip__txt">Architecture</div></div>
                         <div class="chip"><div class="chip__dot chip__dot--ring"></div><div class="chip__txt">Quality</div></div>
                         <div class="chip"><div class="chip__dot chip__dot--soft"></div><div class="chip__txt">Delivery</div></div>
                     </div>
-                    <div class="panel__meta">
-                        <div class="meta">
+                    <div class="panel__meta panel__meta--about">
+                        <div class="meta meta--split">
                             <div class="meta__k">Lean</div>
                             <div class="meta__v">Continuous improvement & emphasizing quality</div>
                         </div>
-                        <div class="meta">
+                        <div class="meta meta--split">
                             <div class="meta__k">Secure</div>
                             <div class="meta__v">Security-first engineering practices</div>
                         </div>
-                        <div class="meta">
+                        <div class="meta meta--split">
                             <div class="meta__k">Fast</div>
                             <div class="meta__v">Small batches, predictable releases</div>
                         </div>
@@ -68,4 +68,3 @@
         </div>
     </section>
 @endsection
-

@@ -15,18 +15,18 @@
                     <a class="btn btn--ghost" href="{{ route('solutions.cyber-security-services') }}">Cyber security</a>
                 </div>
             </div>
-            <div class="hero__visual" aria-hidden="true">
-                <div class="panel">
-                    <div class="panel__meta">
-                        <div class="meta">
+            <div class="hero__visual hero__visual--about" aria-hidden="true">
+                <div class="panel panel--snapshot">
+                    <div class="panel__meta panel__meta--about">
+                        <div class="meta meta--split">
                             <div class="meta__k">Security</div>
                             <div class="meta__v">Protection and governance</div>
                         </div>
-                        <div class="meta">
+                        <div class="meta meta--split">
                             <div class="meta__k">Availability</div>
                             <div class="meta__v">Resilient service design</div>
                         </div>
-                        <div class="meta">
+                        <div class="meta meta--split">
                             <div class="meta__k">Support</div>
                             <div class="meta__v">Operational readiness</div>
                         </div>
@@ -63,4 +63,3 @@
         </div>
     </section>
 @endsection
-

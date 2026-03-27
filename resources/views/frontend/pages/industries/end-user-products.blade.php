@@ -15,18 +15,18 @@
                     <a class="btn btn--ghost" href="{{ route('solutions.software-development') }}">Software development</a>
                 </div>
             </div>
-            <div class="hero__visual" aria-hidden="true">
-                <div class="panel">
-                    <div class="panel__meta">
-                        <div class="meta">
+            <div class="hero__visual hero__visual--about" aria-hidden="true">
+                <div class="panel panel--snapshot">
+                    <div class="panel__meta panel__meta--about">
+                        <div class="meta meta--split">
                             <div class="meta__k">Experience</div>
                             <div class="meta__v">Better journeys and performance</div>
                         </div>
-                        <div class="meta">
+                        <div class="meta meta--split">
                             <div class="meta__k">Security</div>
                             <div class="meta__v">Safe defaults and protections</div>
                         </div>
-                        <div class="meta">
+                        <div class="meta meta--split">
                             <div class="meta__k">Uptime</div>
                             <div class="meta__v">Built to stay available</div>
                         </div>
@@ -63,4 +63,3 @@
         </div>
     </section>
 @endsection
-
