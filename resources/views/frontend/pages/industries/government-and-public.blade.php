@@ -9,7 +9,6 @@
     <section class="hero">
         <div class="container hero__grid">
             <div class="hero__copy">
-                <div class="eyebrow">{{ $kicker }}</div>
                 <h1 class="h1">{{ $title }}</h1>
                 <p class="lead">We help government and public sector teams improve IT services through secure delivery and
                     modern operations—transforming public access with practical innovation.</p>

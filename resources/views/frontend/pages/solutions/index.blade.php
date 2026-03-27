@@ -8,7 +8,6 @@
     <section class="hero">
         <div class="container hero__grid">
             <div class="hero__copy">
-                <div class="eyebrow">{{ $kicker }}</div>
                 <h1 class="h1">{{ $title }}</h1>
                 <p class="lead">Offer the latest software and solutions to our customers. Easy solutions for difficult IT
                     problems to ensure high availability.</p>

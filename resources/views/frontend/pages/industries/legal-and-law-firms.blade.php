@@ -1,14 +1,14 @@
 @extends('frontend.layout.template')
 
 @section('title', 'Statosy — Legal And Law Firms')
-@section('description', 'Industry solutions for legal and law firms: secure document workflows, reliable systems, and
+@section('description',
+    'Industry solutions for legal and law firms: secure document workflows, reliable systems, and
     high availability.')
 
 @section('content')
     <section class="hero">
         <div class="container hero__grid">
             <div class="hero__copy">
-                <div class="eyebrow">{{ $kicker }}</div>
                 <h1 class="h1">{{ $title }}</h1>
                 <p class="lead">We handle the headache of managing legal and law firm IT so you can focus on your
                     clients—secure

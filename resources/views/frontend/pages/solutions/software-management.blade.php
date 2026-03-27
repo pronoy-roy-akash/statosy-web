@@ -7,7 +7,6 @@
     <section class="hero">
         <div class="container hero__grid">
             <div class="hero__copy">
-                <div class="eyebrow">{{ $kicker }}</div>
                 <h1 class="h1">{{ $title }}</h1>
                 <p class="lead">We manage your software delivery and IT operations so you can focus on building your
                     business—planning, execution, DevOps, and continuous improvement.</p>

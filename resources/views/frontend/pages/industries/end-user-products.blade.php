@@ -8,7 +8,6 @@
     <section class="hero">
         <div class="container hero__grid">
             <div class="hero__copy">
-                <div class="eyebrow">{{ $kicker }}</div>
                 <h1 class="h1">{{ $title }}</h1>
                 <p class="lead">We design, develop, and manage your product software behind the scenes so you can focus on
                     growth and customer satisfaction—without compromising on security or availability.</p>

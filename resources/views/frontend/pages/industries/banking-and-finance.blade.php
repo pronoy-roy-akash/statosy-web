@@ -1,14 +1,14 @@
 @extends('frontend.layout.template')
 
 @section('title', 'Statosy — Banking And Finance')
-@section('description', 'Industry solutions for banking and finance: secure systems, compliance-ready operations, and
+@section('description',
+    'Industry solutions for banking and finance: secure systems, compliance-ready operations, and
     high availability.')
 
 @section('content')
     <section class="hero">
         <div class="container hero__grid">
             <div class="hero__copy">
-                <div class="eyebrow">{{ $kicker }}</div>
                 <h1 class="h1">{{ $title }}</h1>
                 <p class="lead">Banking and finance software built with precision and security—protecting sensitive data,
                     supporting critical workflows, and staying available under real-world load.</p>

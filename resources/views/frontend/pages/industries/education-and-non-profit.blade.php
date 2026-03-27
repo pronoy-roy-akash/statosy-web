@@ -1,14 +1,14 @@
 @extends('frontend.layout.template')
 
 @section('title', 'Statosy — Education And Non-Profit')
-@section('description', 'Industry solutions for education and non-profit: dependable platforms, secure access, and
+@section('description',
+    'Industry solutions for education and non-profit: dependable platforms, secure access, and
     efficient operations.')
 
 @section('content')
     <section class="hero">
         <div class="container hero__grid">
             <div class="hero__copy">
-                <div class="eyebrow">{{ $kicker }}</div>
                 <h1 class="h1">{{ $title }}</h1>
                 <p class="lead">Dependable software for education and non-profit organizations—secure access, stable
                     performance, and simplified operations designed for mission-driven teams.</p>

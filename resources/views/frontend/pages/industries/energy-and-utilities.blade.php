@@ -1,14 +1,14 @@
 @extends('frontend.layout.template')
 
 @section('title', 'Statosy — Energy And Utilities')
-@section('description', 'Industry solutions for energy and utilities: stable systems, operational visibility, and high
+@section('description',
+    'Industry solutions for energy and utilities: stable systems, operational visibility, and high
     availability.')
 
 @section('content')
     <section class="hero">
         <div class="container hero__grid">
             <div class="hero__copy">
-                <div class="eyebrow">{{ $kicker }}</div>
                 <h1 class="h1">{{ $title }}</h1>
                 <p class="lead">Deep industry understanding paired with modern engineering to build solutions for energy
                     and

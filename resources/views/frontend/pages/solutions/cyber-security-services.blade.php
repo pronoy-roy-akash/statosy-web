@@ -1,14 +1,14 @@
 @extends('frontend.layout.template')
 
 @section('title', 'Statosy — Cyber Security Services')
-@section('description', 'Cyber security services to keep your business safe while maintaining delivery speed and
+@section('description',
+    'Cyber security services to keep your business safe while maintaining delivery speed and
     availability.')
 
 @section('content')
     <section class="hero">
         <div class="container hero__grid">
             <div class="hero__copy">
-                <div class="eyebrow">{{ $kicker }}</div>
                 <h1 class="h1">{{ $title }}</h1>
                 <p class="lead">Protect your IT infrastructure from cyber threats with practical security that fits real
                     delivery. We help you assess risk, harden systems, and improve detection and response readiness.</p>

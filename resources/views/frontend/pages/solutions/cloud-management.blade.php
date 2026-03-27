@@ -7,7 +7,6 @@
     <section class="hero">
         <div class="container hero__grid">
             <div class="hero__copy">
-                <div class="eyebrow">{{ $kicker }}</div>
                 <h1 class="h1">{{ $title }}</h1>
                 <p class="lead">We make sure your cloud infrastructure runs at maximum efficiency—reducing degraded
                     uptime, improving performance, and keeping services highly available.</p>

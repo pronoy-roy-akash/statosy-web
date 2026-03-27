@@ -1,14 +1,14 @@
 @extends('frontend.layout.template')
 
 @section('title', 'Statosy — Software Development')
-@section('description', 'Software development services to build reliable products and platforms with quality-first
+@section('description',
+    'Software development services to build reliable products and platforms with quality-first
     engineering.')
 
 @section('content')
     <section class="hero">
         <div class="container hero__grid">
             <div class="hero__copy">
-                <div class="eyebrow">{{ $kicker }}</div>
                 <h1 class="h1">{{ $title }}</h1>
                 <p class="lead">Pixel-perfect web and mobile apps delivered with speed and discipline—secure, scalable, and
                     built for long-term maintainability.</p>

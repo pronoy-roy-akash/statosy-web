@@ -1,14 +1,14 @@
 @extends('frontend.layout.template')
 
 @section('title', 'Statosy — IT Consulting')
-@section('description', 'IT consulting to help you make better technology decisions grounded in your goals and
+@section('description',
+    'IT consulting to help you make better technology decisions grounded in your goals and
     constraints.')
 
 @section('content')
     <section class="hero">
         <div class="container hero__grid">
             <div class="hero__copy">
-                <div class="eyebrow">{{ $kicker }}</div>
                 <h1 class="h1">{{ $title }}</h1>
                 <p class="lead">Your IT problems solved with tailored solutions and practical digital innovation. We help
                     you make better decisions, implement the right solutions, and keep delivery grounded in real
