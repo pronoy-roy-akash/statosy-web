@@ -1,7 +1,8 @@
 @extends('frontend.layout.template')
 
 @section('title', 'Statosy — Energy And Utilities')
-@section('description', 'Industry solutions for energy and utilities: stable systems, operational visibility, and high availability.')
+@section('description', 'Industry solutions for energy and utilities: stable systems, operational visibility, and high
+    availability.')
 
 @section('content')
     <section class="hero">
@@ -9,7 +10,9 @@
             <div class="hero__copy">
                 <div class="eyebrow">{{ $kicker }}</div>
                 <h1 class="h1">{{ $title }}</h1>
-                <p class="lead">Reliable platforms for critical operations—built to stay available, deliver real-time visibility, and support secure workflows.</p>
+                <p class="lead">Deep industry understanding paired with modern engineering to build solutions for energy
+                    and
+                    utilities—reliable systems, real-time visibility, and secure workflows.</p>
                 <div class="hero__cta">
                     <a class="btn btn--primary" href="{{ route('home') }}#contact">Let’s talk</a>
                     <a class="btn btn--ghost" href="{{ route('solutions.cloud-management') }}">Cloud management</a>
@@ -41,7 +44,8 @@
         <div class="container">
             <div class="section__head">
                 <h2 class="h2">Ensure high availability of your services</h2>
-                <p class="muted">Operational excellence that keeps critical services stable and supportable.</p>
+                <p class="muted">Operational excellence for critical services—stability, monitoring, and fast response when
+                    it matters.</p>
             </div>
             <div class="steps">
                 <div class="step">

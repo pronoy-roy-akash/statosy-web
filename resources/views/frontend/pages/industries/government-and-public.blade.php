@@ -1,7 +1,8 @@
 @extends('frontend.layout.template')
 
 @section('title', 'Statosy — Government And Public')
-@section('description', 'Industry solutions for government and public sector: secure systems, compliance-minded delivery, and high availability.')
+@section('description', 'Industry solutions for government and public sector: secure systems, compliance-minded
+    delivery, and high availability.')
 
 @section('content')
     <section class="hero">
@@ -9,7 +10,8 @@
             <div class="hero__copy">
                 <div class="eyebrow">{{ $kicker }}</div>
                 <h1 class="h1">{{ $title }}</h1>
-                <p class="lead">Reliable, secure platforms that support critical services, protect sensitive data, and remain available during high demand.</p>
+                <p class="lead">We help government and public sector teams improve IT services through secure delivery and
+                    modern operations—transforming public access with practical innovation.</p>
                 <div class="hero__cta">
                     <a class="btn btn--primary" href="{{ route('home') }}#contact">Request a quote</a>
                     <a class="btn btn--ghost" href="{{ route('solutions.cyber-security-services') }}">Cyber security</a>
@@ -40,8 +42,9 @@
     <section class="section">
         <div class="container">
             <div class="section__head">
-                <h2 class="h2">Keep your business safe & ensure high availability</h2>
-                <p class="muted">Engineering and operations that keep critical public services stable and secure.</p>
+                <h2 class="h2">Improve efficiency and public experience</h2>
+                <p class="muted">Reliable platforms that protect sensitive data, remain available during high demand, and
+                    improve access for citizens.</p>
             </div>
             <div class="cards">
                 <div class="card">

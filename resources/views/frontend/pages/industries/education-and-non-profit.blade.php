@@ -1,7 +1,8 @@
 @extends('frontend.layout.template')
 
 @section('title', 'Statosy — Education And Non-Profit')
-@section('description', 'Industry solutions for education and non-profit: dependable platforms, secure access, and efficient operations.')
+@section('description', 'Industry solutions for education and non-profit: dependable platforms, secure access, and
+    efficient operations.')
 
 @section('content')
     <section class="hero">
@@ -9,7 +10,8 @@
             <div class="hero__copy">
                 <div class="eyebrow">{{ $kicker }}</div>
                 <h1 class="h1">{{ $title }}</h1>
-                <p class="lead">Build trusted systems for learners and communities with secure access, stable performance, and simplified operations.</p>
+                <p class="lead">Dependable software for education and non-profit organizations—secure access, stable
+                    performance, and simplified operations designed for mission-driven teams.</p>
                 <div class="hero__cta">
                     <a class="btn btn--primary" href="{{ route('home') }}#contact">Let’s talk</a>
                     <a class="btn btn--ghost" href="{{ route('solutions.it-consulting') }}">IT consulting</a>
@@ -41,7 +43,8 @@
         <div class="container">
             <div class="section__head">
                 <h2 class="h2">Offer the latest software and solutions</h2>
-                <p class="muted">Simple, reliable platforms that help teams focus on mission and impact.</p>
+                <p class="muted">Simple, reliable platforms that help teams focus on learners and communities—not IT
+                    headaches.</p>
             </div>
             <div class="steps">
                 <div class="step">

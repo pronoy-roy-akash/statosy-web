@@ -9,7 +9,8 @@
             <div class="hero__copy">
                 <div class="eyebrow">{{ $kicker }}</div>
                 <h1 class="h1">{{ $title }}</h1>
-                <p class="lead">Build user-facing products that are fast, secure, and designed for high availability—supported by dependable cloud operations.</p>
+                <p class="lead">We design, develop, and manage your product software behind the scenes so you can focus on
+                    growth and customer satisfaction—without compromising on security or availability.</p>
                 <div class="hero__cta">
                     <a class="btn btn--primary" href="{{ route('home') }}#contact">Let’s talk</a>
                     <a class="btn btn--ghost" href="{{ route('solutions.software-development') }}">Software development</a>
@@ -41,23 +42,26 @@
         <div class="container">
             <div class="section__head">
                 <h2 class="h2">Improve efficiency and provide better experiences</h2>
-                <p class="muted">Solutions that help teams ship faster, operate safely, and deliver consistently better user outcomes.</p>
+                <p class="muted">Reliable product engineering and cloud operations to keep your app fast, secure, and ready
+                    for real users.</p>
             </div>
             <div class="steps">
                 <div class="step">
                     <div class="step__n">01</div>
-                    <div class="step__t">Discover</div>
-                    <div class="step__d">Clarify users, use cases, and the critical path to value.</div>
+                    <div class="step__t">Plan</div>
+                    <div class="step__d">Align on users, journeys, and the critical path to value with clear success
+                        criteria.</div>
                 </div>
                 <div class="step">
                     <div class="step__n">02</div>
                     <div class="step__t">Build</div>
-                    <div class="step__d">Deliver with quality-first engineering and secure design.</div>
+                    <div class="step__d">Deliver pixel-clean UI and dependable systems with security-first engineering.</div>
                 </div>
                 <div class="step">
                     <div class="step__n">03</div>
                     <div class="step__t">Operate</div>
-                    <div class="step__d">Monitor and improve reliability to maintain high availability.</div>
+                    <div class="step__d">Keep performance high and uptime steady with monitoring and continuous
+                        improvement.</div>
                 </div>
             </div>
         </div>

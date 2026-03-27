@@ -1,7 +1,8 @@
 @extends('frontend.layout.template')
 
 @section('title', 'Statosy — Banking And Finance')
-@section('description', 'Industry solutions for banking and finance: secure systems, compliance-ready operations, and high availability.')
+@section('description', 'Industry solutions for banking and finance: secure systems, compliance-ready operations, and
+    high availability.')
 
 @section('content')
     <section class="hero">
@@ -9,7 +10,8 @@
             <div class="hero__copy">
                 <div class="eyebrow">{{ $kicker }}</div>
                 <h1 class="h1">{{ $title }}</h1>
-                <p class="lead">Secure platforms that protect sensitive data, support critical workflows, and remain available under load—built with reliability in mind.</p>
+                <p class="lead">Banking and finance software built with precision and security—protecting sensitive data,
+                    supporting critical workflows, and staying available under real-world load.</p>
                 <div class="hero__cta">
                     <a class="btn btn--primary" href="{{ route('home') }}#contact">Request a quote</a>
                     <a class="btn btn--ghost" href="{{ route('solutions.cyber-security-services') }}">Cyber security</a>
@@ -41,7 +43,8 @@
         <div class="container">
             <div class="section__head">
                 <h2 class="h2">Improve efficiency and provide better experiences</h2>
-                <p class="muted">Systems and processes designed to reduce risk and improve customer experience.</p>
+                <p class="muted">Reduce risk, improve customer experience, and keep services stable with security-first
+                    engineering and reliable operations.</p>
             </div>
             <div class="cards">
                 <div class="card">

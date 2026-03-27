@@ -1,7 +1,8 @@
 @extends('frontend.layout.template')
 
 @section('title', 'Statosy — Legal And Law Firms')
-@section('description', 'Industry solutions for legal and law firms: secure document workflows, reliable systems, and high availability.')
+@section('description', 'Industry solutions for legal and law firms: secure document workflows, reliable systems, and
+    high availability.')
 
 @section('content')
     <section class="hero">
@@ -9,7 +10,9 @@
             <div class="hero__copy">
                 <div class="eyebrow">{{ $kicker }}</div>
                 <h1 class="h1">{{ $title }}</h1>
-                <p class="lead">Secure, reliable systems for sensitive workflows—built for confidentiality, availability, and operational clarity.</p>
+                <p class="lead">We handle the headache of managing legal and law firm IT so you can focus on your
+                    clients—secure
+                    document workflows, reliable systems, and high availability.</p>
                 <div class="hero__cta">
                     <a class="btn btn--primary" href="{{ route('home') }}#contact">Request a quote</a>
                     <a class="btn btn--ghost" href="{{ route('solutions.it-consulting') }}">IT consulting</a>
@@ -41,7 +44,8 @@
         <div class="container">
             <div class="section__head">
                 <h2 class="h2">Keep your business safe & ensure high availability</h2>
-                <p class="muted">Security-first engineering and operational practices designed for sensitive workloads.</p>
+                <p class="muted">Forget IT-related problems. Security-first engineering and operational practices designed
+                    for sensitive legal workloads.</p>
             </div>
             <div class="cards">
                 <div class="card">
