@@ -215,7 +215,7 @@
                     </div>
                 </div>
 
-                <button class="btn btn--primary btn--block" type="submit">Submit resume</button>
+                <button class="btn btn--primary btn--block" type="submit">Submit this!</button>
                 <div class="muted form__fine">Accepted formats: PDF/DOC/DOCX. Max file size: 2MB.</div>
             </form>
         </div>
