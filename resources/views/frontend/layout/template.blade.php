@@ -14,6 +14,13 @@
 <body class="theme-dark">
     <a class="skip" href="#content">Skip to content</a>
 
+    <div class="bgFloat" aria-hidden="true">
+        <span class="bgFloat__orb bgFloat__orb--a"></span>
+        <span class="bgFloat__orb bgFloat__orb--b"></span>
+        <span class="bgFloat__orb bgFloat__orb--c"></span>
+        <span class="bgFloat__beam"></span>
+    </div>
+
     @include('frontend.includes.navbar')
 
     <main id="content">

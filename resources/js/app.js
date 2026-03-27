@@ -157,3 +157,36 @@ document.addEventListener('click', (e) => {
         input.showPicker();
     } catch {}
 });
+
+const prefersReducedMotion = window.matchMedia?.('(prefers-reduced-motion: reduce)')?.matches ?? false;
+
+if (!prefersReducedMotion && 'IntersectionObserver' in window) {
+    const revealTargets = Array.from(
+        document.querySelectorAll(
+            '.section__head, .cards .card, .panel, .steps .step, .impact, .contactHub__panel, .awardTile, .thanks'
+        )
+    );
+
+    const seen = new WeakSet();
+    revealTargets.forEach((el, idx) => {
+        if (seen.has(el)) return;
+        seen.add(el);
+        el.classList.add('reveal');
+        el.style.setProperty('--d', `${Math.min(idx, 8) * 40}ms`);
+    });
+
+    const io = new IntersectionObserver(
+        (entries) => {
+            entries.forEach((entry) => {
+                if (!entry.isIntersecting) return;
+                entry.target.classList.add('is-inview');
+                io.unobserve(entry.target);
+            });
+        },
+        { threshold: 0.14, rootMargin: '0px 0px -10% 0px' }
+    );
+
+    revealTargets.forEach((el) => io.observe(el));
+} else {
+    document.querySelectorAll('.reveal').forEach((el) => el.classList.add('is-inview'));
+}
