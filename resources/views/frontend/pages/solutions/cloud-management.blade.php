@@ -9,7 +9,8 @@
             <div class="hero__copy">
                 <div class="eyebrow">{{ $kicker }}</div>
                 <h1 class="h1">{{ $title }}</h1>
-                <p class="lead">We take care of cloud and server management so you can spend time growing your business—stability, security, and operational excellence.</p>
+                <p class="lead">We make sure your cloud infrastructure runs at maximum efficiency—reducing degraded
+                    uptime, improving performance, and keeping services highly available.</p>
                 <div class="hero__cta">
                     <a class="btn btn--primary" href="{{ route('home') }}#contact">Talk to an expert</a>
                     <a class="btn btn--ghost" href="{{ route('solutions.cyber-security-services') }}">Cyber security</a>
@@ -41,23 +42,24 @@
         <div class="container">
             <div class="section__head">
                 <h2 class="h2">Operate with confidence</h2>
-                <p class="muted">A practical approach to cloud operations that keeps services reliable and costs under control.</p>
+                <p class="muted">Monitoring, incident readiness, and operational discipline to keep services reliable and
+                    costs under control.</p>
             </div>
             <div class="cards">
                 <div class="card">
                     <div class="icon" aria-hidden="true">@include('partials.icons.cloud')</div>
                     <div class="card__t">Cloud & servers</div>
-                    <div class="card__d">Provisioning, hardening, updates, backups, and performance tuning.</div>
+                    <div class="card__d">Provisioning, hardening, updates, backups, and performance improvements.</div>
                 </div>
                 <div class="card">
                     <div class="icon" aria-hidden="true">@include('partials.icons.shield')</div>
                     <div class="card__t">Security operations</div>
-                    <div class="card__d">Least privilege, safe configs, and incident-ready practices.</div>
+                    <div class="card__d">Least privilege, safe configs, and response-ready practices.</div>
                 </div>
                 <div class="card">
                     <div class="icon" aria-hidden="true">@include('partials.icons.layers')</div>
                     <div class="card__t">Observability</div>
-                    <div class="card__d">Monitoring, alerts, and dashboards designed for fast resolution.</div>
+                    <div class="card__d">Monitoring, alerts, and dashboards designed for fast recovery.</div>
                 </div>
             </div>
         </div>
