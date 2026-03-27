@@ -7,8 +7,8 @@
                 services.</div>
         </div>
         <div class="footer__heroActions">
-            <a class="btn btn--primary" href="{{ route('home') }}#contact">Request a quote</a>
-            <a class="btn btn--ghost" href="{{ route('home') }}#services">View services</a>
+            <a class="btn btn--primary" href="{{ route('contact-us') }}#message">Let's Talk</a>
+            <a class="btn btn--ghost" href="{{ route('contact-us') }}#schedule">Schedule a meeting</a>
         </div>
     </div>
 
@@ -86,9 +86,11 @@
             <div class="footer__title">Get In Touch</div>
             <div class="muted footer__text">If you have any questions or need help, contact our team.</div>
             <div class="footer__contact">
-                <a class="footer__contactItem" href="{{ route('home') }}#contact">Send a message</a>
-                <a class="footer__contactItem" href="{{ route('home') }}#contact">Request a quote</a>
+                <a class="footer__contactItem" href="{{ route('contact-us') }}#message">Send a message</a>
+                <a class="footer__contactItem" href="{{ route('contact-us') }}#schedule">Book Meeting</a>
             </div>
+
+
 
             <div class="footer__social">
                 <a class="footer__socialBtn" href="#" aria-label="LinkedIn">
