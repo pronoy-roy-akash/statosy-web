@@ -1,29 +1,37 @@
 @extends('frontend.layout.template')
 
-@section('title', 'Statosy — Cloud Services & Software Engineering')
+@section('title', 'Statosy — Cloud Services & Software Solutions')
 @section('description',
-    'Statosy provides a consultative approach to emerging technology: software development, software management, cyber security, IT consulting, cloud management, and 24/7 support.')
+    'Statosy provides a consultative approach to emerging technology: software development, software
+    management, cyber security, IT consulting, cloud management, and 24/7 support.')
 
 @section('content')
     <section class="hero">
         <div class="container hero__grid">
             <div class="hero__copy">
-                <div class="eyebrow">Global delivery, cloud-first mindset</div>
-                <h1 class="h1">Build, secure, and scale with Statosy</h1>
-                <p class="lead">Statosy helps teams ship reliable cloud services and software products with strong security, high availability, and fast iteration.</p>
+                <div class="eyebrow">Founded in 2025 • Cloud-first • Security-first</div>
+                <h1 class="h1">Build systems that stay safe and stay up</h1>
+                <p class="lead">Statosy is a cloud and software company with its own in-house infrastructure—delivering
+                    secure, high-availability systems, powerful software, and exceptional web solutions through a top-tier
+                    engineering team.</p>
                 <div class="hero__cta">
                     <a class="btn btn--primary" href="#contact">Start a project</a>
                     <a class="btn btn--ghost" href="#services">Explore services</a>
+
                 </div>
 
                 <div class="hero__badges">
                     <div class="badge">
-                        <div class="badge__k">User-first delivery</div>
-                        <div class="badge__v">Designed for real adoption</div>
+                        <div class="badge__k">Security-first delivery</div>
+                        <div class="badge__v">Hardening and safe defaults</div>
                     </div>
                     <div class="badge">
-                        <div class="badge__k">High Availability</div>
-                        <div class="badge__v">Built for uptime</div>
+                        <div class="badge__k">High availability mindset</div>
+                        <div class="badge__v">Designed for resilience</div>
+                    </div>
+                    <div class="badge">
+                        <div class="badge__k">Awards wall</div>
+                        <div class="badge__v">Currently in beta</div>
                     </div>
                 </div>
             </div>
@@ -63,46 +71,50 @@
                     </div>
                     <div class="panel__meta">
                         <div class="meta">
-                            <div class="meta__k">10+</div>
-                            <div class="meta__v">Years building production systems</div>
+                            <div class="meta__k">2025</div>
+                            <div class="meta__v">Founded</div>
                         </div>
                         <div class="meta">
-                            <div class="meta__k">450+</div>
-                            <div class="meta__v">Projects shipped end-to-end</div>
+                            <div class="meta__k">20+</div>
+                            <div class="meta__v">Developers</div>
                         </div>
                         <div class="meta">
-                            <div class="meta__k">10M+</div>
-                            <div class="meta__v">User interactions recorded</div>
+                            <div class="meta__k">Onboarding</div>
+                            <div class="meta__v">Prestigious client projects</div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="hero__fade"></div>
+            <div class="hero__fade"></div>
     </section>
+
 
     <section class="section" id="process">
         <div class="container">
             <div class="section__head">
-                <h2 class="h2">Help challenge critical activities</h2>
-                <p class="muted">Statosy partners with you through strategy, build, and operations to keep your services secure and highly available.</p>
+                <h2 class="h2">How we work</h2>
+                <p class="muted">Clear outcomes, disciplined delivery, and operational confidence—built for production
+                    realities.</p>
             </div>
 
             <div class="steps">
                 <div class="step">
                     <div class="step__n">01</div>
                     <div class="step__t">Consultative approach</div>
-                    <div class="step__d">We align on goals, constraints, and success metrics before choosing tools and architecture.</div>
+                    <div class="step__d">We align on goals, constraints, and success metrics before choosing tools and
+                        architecture.</div>
                 </div>
                 <div class="step">
                     <div class="step__n">02</div>
                     <div class="step__t">Lean delivery</div>
-                    <div class="step__d">We ship in small increments with continuous improvement and quality as the default.</div>
+                    <div class="step__d">We ship in small increments with continuous improvement and quality as the default.
+                    </div>
                 </div>
                 <div class="step">
                     <div class="step__n">03</div>
                     <div class="step__t">Operate with confidence</div>
-                    <div class="step__d">Security, observability, and reliability practices that keep your cloud services stable.</div>
+                    <div class="step__d">Security, observability, and reliability practices that keep your cloud services
+                        stable.</div>
                 </div>
             </div>
         </div>
@@ -112,39 +124,46 @@
         <div class="container">
             <div class="section__head">
                 <h2 class="h2">Offer the latest software and solutions</h2>
-                <p class="muted">Modern engineering and cloud operations to keep your business safe and your services available.</p>
+                <p class="muted">Modern engineering and cloud operations to keep your business safe and your services
+                    available.</p>
             </div>
 
             <div class="cards">
                 <div class="card">
                     <div class="icon" aria-hidden="true">@include('partials.icons.code')</div>
                     <div class="card__t">Software Development</div>
-                    <div class="card__d">Build cloud-ready products, internal tools, and platforms with quality-first engineering.</div>
+                    <div class="card__d">Build cloud-ready products, internal tools, and platforms with quality-first
+                        engineering.</div>
                 </div>
                 <div class="card">
                     <div class="icon" aria-hidden="true">@include('partials.icons.layers')</div>
                     <div class="card__t">Software Management</div>
-                    <div class="card__d">Delivery management, release planning, and execution support for predictable outcomes.</div>
+                    <div class="card__d">Delivery management, release planning, and execution support for predictable
+                        outcomes.</div>
                 </div>
                 <div class="card">
                     <div class="icon" aria-hidden="true">@include('partials.icons.shield')</div>
                     <div class="card__t">Cyber Security</div>
-                    <div class="card__d">Security reviews, hardening, and incident-ready practices without slowing delivery.</div>
+                    <div class="card__d">Security reviews, hardening, and incident-ready practices without slowing
+                        delivery.</div>
                 </div>
                 <div class="card">
                     <div class="icon" aria-hidden="true">@include('partials.icons.chat')</div>
                     <div class="card__t">IT Consulting</div>
-                    <div class="card__d">Architecture, cloud strategy, and roadmap guidance grounded in your goals and constraints.</div>
+                    <div class="card__d">Architecture, cloud strategy, and roadmap guidance grounded in your goals and
+                        constraints.</div>
                 </div>
                 <div class="card">
                     <div class="icon" aria-hidden="true">@include('partials.icons.cloud')</div>
                     <div class="card__t">Cloud Management</div>
-                    <div class="card__d">We operate and optimize cloud and servers so you can focus on growth and product.</div>
+                    <div class="card__d">We operate and optimize cloud and servers so you can focus on growth and product.
+                    </div>
                 </div>
                 <div class="card">
                     <div class="icon" aria-hidden="true">@include('partials.icons.support')</div>
                     <div class="card__t">Customer Support</div>
-                    <div class="card__d">Support workflows and escalation paths designed for fast resolution and transparency.</div>
+                    <div class="card__d">Support workflows and escalation paths designed for fast resolution and
+                        transparency.</div>
                 </div>
             </div>
         </div>
@@ -154,8 +173,9 @@
         <div class="container">
             <div class="impact">
                 <div class="impact__copy">
-                    <h2 class="h2">Improve efficiency and provide better experiences</h2>
-                    <p class="muted">Statosy brings engineering depth and operational discipline to help you reach digital transformation through secure, scalable, and maintainable systems.</p>
+                    <h2 class="h2">Operate with confidence</h2>
+                    <p class="muted">When uptime, security, and delivery speed all matter, you need a team that can build
+                        and operate without the drama.</p>
                     <div class="impact__cta">
                         <a class="btn btn--primary" href="#contact">Get in touch</a>
                         <a class="btn btn--ghost" href="#process">How we work</a>
@@ -163,16 +183,16 @@
                 </div>
                 <div class="impact__stats">
                     <div class="stat">
-                        <div class="stat__k">450+</div>
-                        <div class="stat__v">Projects and software delivered</div>
+                        <div class="stat__k">Service level</div>
+                        <div class="stat__v">Response & resolution targets</div>
                     </div>
                     <div class="stat">
-                        <div class="stat__k">10M+</div>
-                        <div class="stat__v">User interactions recorded</div>
+                        <div class="stat__k">Uptime</div>
+                        <div class="stat__v">Designed for resilience</div>
                     </div>
                     <div class="stat">
-                        <div class="stat__k">10+</div>
-                        <div class="stat__v">Years of service and innovation</div>
+                        <div class="stat__k">Security</div>
+                        <div class="stat__v">Hardening, least privilege</div>
                     </div>
                 </div>
             </div>
@@ -183,7 +203,8 @@
         <div class="container contact">
             <div class="contact__copy">
                 <h2 class="h2">If you have any questions or need help</h2>
-                <p class="muted">Contact Statosy. Tell us what you are building and we will reply with the best next steps.</p>
+                <p class="muted">Contact Statosy. Tell us what you are building and we will reply with the best next
+                    steps.</p>
                 <div class="contact__note">
                     <div class="contact__pill">
                         <span class="dot dot--soft" aria-hidden="true"></span>
@@ -202,21 +223,24 @@
                 <div class="form__grid">
                     <div class="field">
                         <label for="name">Name</label>
-                        <input id="name" name="name" type="text" value="{{ old('name') }}" autocomplete="name" required>
+                        <input id="name" name="name" type="text" value="{{ old('name') }}"
+                            autocomplete="name" required>
                         @error('name')
                             <div class="error">{{ $message }}</div>
                         @enderror
                     </div>
                     <div class="field">
                         <label for="email">Email</label>
-                        <input id="email" name="email" type="email" value="{{ old('email') }}" autocomplete="email" required>
+                        <input id="email" name="email" type="email" value="{{ old('email') }}"
+                            autocomplete="email" required>
                         @error('email')
                             <div class="error">{{ $message }}</div>
                         @enderror
                     </div>
                     <div class="field">
                         <label for="company">Company (optional)</label>
-                        <input id="company" name="company" type="text" value="{{ old('company') }}" autocomplete="organization">
+                        <input id="company" name="company" type="text" value="{{ old('company') }}"
+                            autocomplete="organization">
                         @error('company')
                             <div class="error">{{ $message }}</div>
                         @enderror
@@ -243,4 +267,3 @@
         </div>
     </section>
 @endsection
-

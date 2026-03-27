@@ -2,7 +2,6 @@
     <div class="container nav__inner">
         <a class="brand" href="{{ route('home') }}" aria-label="Home">
             <img class="brand__logo" src="{{ asset('frontend/assets/images/logo.png') }}" alt="Statosy">
-            <span class="brand__name">Statosy</span>
         </a>
 
         <button class="nav__toggle" type="button" data-nav-toggle aria-expanded="false" aria-controls="site-nav">

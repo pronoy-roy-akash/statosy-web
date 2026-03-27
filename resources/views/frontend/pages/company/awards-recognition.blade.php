@@ -63,34 +63,4 @@
         </div>
         <div class="hero__fade"></div>
     </section>
-
-    <section class="section">
-        <div class="container">
-            <div class="section__head">
-                <h2 class="h2">How we earn recognition</h2>
-                <p class="muted">Awards are a side effect. This is the work that earns them: consistent quality,
-                    security-first delivery, and systems that keep running when it matters.</p>
-            </div>
-            <div class="steps">
-                <div class="step">
-                    <div class="step__n">01</div>
-                    <div class="step__t">Quality by default</div>
-                    <div class="step__d">Clear requirements, clean architecture, reviews, and testing—so “pixel perfect” and
-                        “works in production” are both true.</div>
-                </div>
-                <div class="step">
-                    <div class="step__n">02</div>
-                    <div class="step__t">Security-first mindset</div>
-                    <div class="step__d">We build with safe defaults, reduce risk early, and keep security aligned with real
-                        delivery speed.</div>
-                </div>
-                <div class="step">
-                    <div class="step__n">03</div>
-                    <div class="step__t">High availability outcomes</div>
-                    <div class="step__d">Reliability patterns, observability, and operational discipline—so uptime isn’t a
-                        promise, it’s a habit.</div>
-                </div>
-            </div>
-        </div>
-    </section>
 @endsection
