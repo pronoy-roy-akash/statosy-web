@@ -110,17 +110,28 @@ if (dropdownRoots.length) {
 
 if (header) {
     let ticking = false;
+    let lastY = window.scrollY;
 
     const update = () => {
         const y = window.scrollY;
 
         if (nav && nav.classList.contains('is-open')) {
             header.classList.add('nav--scrolled');
+            header.classList.remove('nav--hidden');
+            lastY = y;
             ticking = false;
             return;
         }
 
         header.classList.toggle('nav--scrolled', y > 10);
+        const delta = y - lastY;
+        const goingDown = delta > 6;
+        const goingUp = delta < -6;
+        const shouldHide = y > 120 && goingDown;
+        const shouldShow = goingUp || y < 60;
+        if (shouldHide) header.classList.add('nav--hidden');
+        if (shouldShow) header.classList.remove('nav--hidden');
+        lastY = y;
         ticking = false;
     };
 

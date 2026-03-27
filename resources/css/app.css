@@ -94,6 +94,10 @@ svg {
     transition: transform 170ms ease, background 170ms ease, border-color 170ms ease;
 }
 
+.nav--hidden {
+    transform: translateY(-110%);
+}
+
 .nav--scrolled {
     background: rgba(0, 0, 0, 0.96);
     border-bottom-color: rgba(255, 255, 255, 0.16);
