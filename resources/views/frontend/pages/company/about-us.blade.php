@@ -71,7 +71,7 @@
                             <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
                                 <path
                                     d="M5 7H19C20.1 7 21 7.9 21 9V17C21 18.1 20.1 19 19 19H5C3.9 19 3 18.1 3 17V9C3 7.9 3.9 7 5 7Z"
-                                    stroke="currentColor" stroke-width="1.6" stroke-linejoin="round" />
+                                    stroke="currentColor" target="_blank" stroke-width="1.6" stroke-linejoin="round" />
                                 <path d="M4 9L12 14L20 9" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"
                                     stroke-linejoin="round" />
                             </svg>

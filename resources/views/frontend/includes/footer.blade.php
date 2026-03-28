@@ -24,16 +24,16 @@
 
             <div class="footer__statRow">
                 <div class="footer__statMini">
-                    <div class="footer__statK">2025</div>
-                    <div class="footer__statV">Founded</div>
+                    <div class="footer__statK">Secure</div>
+                    <div class="footer__statV">Security-first delivery</div>
                 </div>
                 <div class="footer__statMini">
-                    <div class="footer__statK">20+</div>
-                    <div class="footer__statV">Developers</div>
+                    <div class="footer__statK">Reliable</div>
+                    <div class="footer__statV">High availability mindset</div>
                 </div>
                 <div class="footer__statMini">
-                    <div class="footer__statK">In-house</div>
-                    <div class="footer__statV">Infrastructure</div>
+                    <div class="footer__statK">Fast</div>
+                    <div class="footer__statV">Lean, consistent shipping</div>
                 </div>
             </div>
         </div>
@@ -44,7 +44,7 @@
                 <li><a class="footer__link" href="{{ route('company.about') }}">About Us</a></li>
                 <li><a class="footer__link" href="{{ route('company.awards') }}">Awards & Recognition</a></li>
                 <li><a class="footer__link" href="{{ route('company.careers') }}">Careers</a></li>
-                <li><a class="footer__link" href="{{ route('home') }}#contact">Contact Us</a></li>
+                <li><a class="footer__link" href="{{ route('contact-us') }}">Contact Us</a></li>
             </ul>
         </div>
 
