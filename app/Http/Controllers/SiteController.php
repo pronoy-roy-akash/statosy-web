@@ -67,11 +67,13 @@ class SiteController extends Controller
 
     public function contact(Request $request): RedirectResponse
     {
+        $isMeetingRequest = !empty($request->input('meeting_date')) || !empty($request->input('meeting_time'));
+
         $validated = $request->validate([
             'name' => ['required', 'string', 'max:120'],
             'email' => ['required', 'email', 'max:190'],
             'company' => ['nullable', 'string', 'max:190'],
-            'topic' => ['nullable', 'string', 'max:120'],
+            'topic' => ['required', 'string', 'max:120'],
             'meeting_date' => ['nullable', 'date'],
             'meeting_time' => ['nullable', 'date_format:H:i'],
             'message' => ['nullable', 'string', 'max:4000', 'required_without_all:meeting_date,meeting_time'],

@@ -274,6 +274,7 @@
 
             <form class="form" method="post" action="{{ route('contact') }}">
                 @csrf
+                <input type="hidden" name="form_context" value="home_contact">
 
                 <div class="form__grid">
                     <div class="field">
@@ -301,8 +302,8 @@
                         @enderror
                     </div>
                     <div class="field">
-                        <label for="topic">Topic (optional)</label>
-                        <input id="topic" name="topic" type="text" value="{{ old('topic') }}">
+                        <label for="topic">Topic</label>
+                        <input id="topic" name="topic" type="text" value="{{ old('topic') }}" required>
                         @error('topic')
                             <div class="error">{{ $message }}</div>
                         @enderror

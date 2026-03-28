@@ -7,7 +7,8 @@
     <section class="hero">
         <div class="container hero__grid">
             <div class="hero__copy">
-                <h1 class="h1">{{ \App\Support\SiteContentStore::get('contact.hero.title', $title ?? 'Contact us') }}</h1>
+                <h1 class="h1">{{ \App\Support\SiteContentStore::get('contact.hero.title', $title ?? 'Contact us') }}
+                </h1>
                 <p class="lead">
                     {{ \App\Support\SiteContentStore::get('contact.hero.text', 'If you have any questions or need help, contact our team. Send a message or request a meeting—we’ll reply with the best next steps.') }}
                 </p>
@@ -29,7 +30,8 @@
                         </div>
                         <div class="meta meta--split">
                             <div class="meta__k">Email</div>
-                            <div class="meta__v">{{ \App\Support\SiteContentStore::get('contact.email', 'hello@statosy.com') }}</div>
+                            <div class="meta__v">
+                                {{ \App\Support\SiteContentStore::get('contact.email', 'hello@statosy.com') }}</div>
                         </div>
                         <div class="meta meta--split">
                             <div class="meta__k">Meetings</div>
@@ -54,6 +56,7 @@
                     <div class="panel__title">Message form</div>
                     <form class="form" method="post" action="{{ route('contact') }}">
                         @csrf
+                        <input type="hidden" name="form_context" value="contact_message">
                         <div class="form__grid">
                             <div class="field">
                                 <label for="contact_name">Name</label>
@@ -80,8 +83,9 @@
                                 @enderror
                             </div>
                             <div class="field">
-                                <label for="contact_topic">Topic (optional)</label>
-                                <input id="contact_topic" name="topic" type="text" value="{{ old('topic') }}">
+                                <label for="contact_topic">Topic</label>
+                                <input id="contact_topic" name="topic" type="text" value="{{ old('topic') }}"
+                                    required>
                                 @error('topic')
                                     <div class="error">{{ $message }}</div>
                                 @enderror
@@ -164,8 +168,9 @@
                                 @enderror
                             </div>
                             <div class="field">
-                                <label for="meeting_topic">Topic (optional)</label>
-                                <input id="meeting_topic" name="topic" type="text" value="{{ old('topic') }}">
+                                <label for="meeting_topic">Topic</label>
+                                <input id="meeting_topic" name="topic" type="text" value="{{ old('topic') }}"
+                                    required>
                                 @error('topic')
                                     <div class="error">{{ $message }}</div>
                                 @enderror
