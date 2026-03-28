@@ -62,20 +62,20 @@
                     <div class="leader__work">Leads company strategy, client partnerships, and delivery direction across
                         cloud services and software projects.</div>
                     <div class="leader__links">
-                        <a class="iconBtn"
-                            href="https://www.linkedin.com/search/results/all/?keywords=Pronoy%20Roy%20Akash%20Statosy"
-                            target="_blank" rel="noopener noreferrer" aria-label="Pronoy Roy Akash on LinkedIn">
+                        <a class="iconBtn" href="https://www.linkedin.com/in/pronoy-roy-akash/" target="_blank"
+                            rel="noopener noreferrer" aria-label="Pronoy Roy Akash on LinkedIn">
                             <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
                                 <path
                                     d="M20.447 20.452H17.09v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.745V9h3.222v1.561h.046c.449-.85 1.546-1.748 3.182-1.748 3.404 0 4.032 2.241 4.032 5.156v6.483zM5.337 7.433A1.998 1.998 0 1 1 5.34 3.44a1.998 1.998 0 0 1-.003 3.993zM6.956 20.452H3.713V9h3.243v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.727v20.545C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.273V1.727C24 .774 23.2 0 22.222 0h.003z" />
                             </svg>
                         </a>
-                        <a class="iconBtn" href="mailto:hello@statosy.com?subject=Attn%3A%20Pronoy%20Roy%20Akash"
-                            aria-label="Email Pronoy Roy Akash">
+                        <a class="iconBtn"
+                            href="https://mail.google.com/mail/?view=cm&fs=1&to=pronoy@statosy.com&su=Hello%20Pronoy%20Roy%20Akash"
+                            target="_blank" rel="noopener noreferrer" aria-label="Email Pronoy Roy Akash">
                             <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
                                 <path
                                     d="M5 7H19C20.1 7 21 7.9 21 9V17C21 18.1 20.1 19 19 19H5C3.9 19 3 18.1 3 17V9C3 7.9 3.9 7 5 7Z"
-                                    stroke="currentColor" target="_blank" stroke-width="1.6" stroke-linejoin="round" />
+                                    stroke="currentColor" stroke-width="1.6" stroke-linejoin="round" />
                                 <path d="M4 9L12 14L20 9" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"
                                     stroke-linejoin="round" />
                             </svg>
@@ -91,16 +91,16 @@
                     <div class="leader__work">Owns architecture and engineering standards, ensuring security-first delivery
                         and high availability across production systems.</div>
                     <div class="leader__links">
-                        <a class="iconBtn"
-                            href="https://www.linkedin.com/search/results/all/?keywords=Riyad%20Arefin%20Statosy"
-                            target="_blank" rel="noopener noreferrer" aria-label="Riyad Arefin on LinkedIn">
+                        <a class="iconBtn" href="https://www.linkedin.com/in/riyadarefin/" target="_blank"
+                            rel="noopener noreferrer" aria-label="Riyad Arefin on LinkedIn">
                             <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
                                 <path
                                     d="M20.447 20.452H17.09v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.745V9h3.222v1.561h.046c.449-.85 1.546-1.748 3.182-1.748 3.404 0 4.032 2.241 4.032 5.156v6.483zM5.337 7.433A1.998 1.998 0 1 1 5.34 3.44a1.998 1.998 0 0 1-.003 3.993zM6.956 20.452H3.713V9h3.243v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.727v20.545C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.273V1.727C24 .774 23.2 0 22.222 0h.003z" />
                             </svg>
                         </a>
-                        <a class="iconBtn" href="mailto:hello@statosy.com?subject=Attn%3A%20Riyad%20Arefin"
-                            aria-label="Email Riyad Arefin">
+                        <a class="iconBtn"
+                            href="https://mail.google.com/mail/?view=cm&fs=1&to=riyad@statosy.com&su=Hello%20Riyad%20Arefin"
+                            target="_blank" rel="noopener noreferrer" aria-label="Email Riyad Arefin">
                             <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
                                 <path
                                     d="M5 7H19C20.1 7 21 7.9 21 9V17C21 18.1 20.1 19 19 19H5C3.9 19 3 18.1 3 17V9C3 7.9 3.9 7 5 7Z"
@@ -120,17 +120,17 @@
                     <div class="leader__work">Drives operations, delivery governance, and execution quality across ongoing
                         and onboarding client engagements.</div>
                     <div class="leader__links">
-                        <a class="iconBtn"
-                            href="https://www.linkedin.com/search/results/all/?keywords=Faiyaz%20Chowdhury%20Statosy"
-                            target="_blank" rel="noopener noreferrer" aria-label="Faiyaz Chowdhury on LinkedIn">
+                        <a class="iconBtn" href="https://www.linkedin.com/in/faiyazsc/" target="_blank"
+                            rel="noopener noreferrer" aria-label="Faiyaz Chowdhury on LinkedIn">
                             <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"
                                 aria-hidden="true">
                                 <path
                                     d="M20.447 20.452H17.09v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.745V9h3.222v1.561h.046c.449-.85 1.546-1.748 3.182-1.748 3.404 0 4.032 2.241 4.032 5.156v6.483zM5.337 7.433A1.998 1.998 0 1 1 5.34 3.44a1.998 1.998 0 0 1-.003 3.993zM6.956 20.452H3.713V9h3.243v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.727v20.545C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.273V1.727C24 .774 23.2 0 22.222 0h.003z" />
                             </svg>
                         </a>
-                        <a class="iconBtn" href="mailto:hello@statosy.com?subject=Attn%3A%20Faiyaz%20Chowdhury"
-                            aria-label="Email Faiyaz Chowdhury">
+                        <a class="iconBtn"
+                            href="https://mail.google.com/mail/?view=cm&fs=1&to=faiyaz@statosy.com&su=Hello%20Faiyaz%20Chowdhury"
+                            target="_blank" rel="noopener noreferrer" aria-label="Email Faiyaz Chowdhury">
                             <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
                                 <path
                                     d="M5 7H19C20.1 7 21 7.9 21 9V17C21 18.1 20.1 19 19 19H5C3.9 19 3 18.1 3 17V9C3 7.9 3.9 7 5 7Z"
@@ -159,8 +159,9 @@
                                     d="M20.447 20.452H17.09v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.745V9h3.222v1.561h.046c.449-.85 1.546-1.748 3.182-1.748 3.404 0 4.032 2.241 4.032 5.156v6.483zM5.337 7.433A1.998 1.998 0 1 1 5.34 3.44a1.998 1.998 0 0 1-.003 3.993zM6.956 20.452H3.713V9h3.243v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.727v20.545C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.273V1.727C24 .774 23.2 0 22.222 0h.003z" />
                             </svg>
                         </a>
-                        <a class="iconBtn" href="mailto:hello@statosy.com?subject=Attn%3A%20Azmainur%20Rahman"
-                            aria-label="Email Azmainur Rahman">
+                        <a class="iconBtn"
+                            href="https://mail.google.com/mail/?view=cm&fs=1&to=azmainur@statosy.com&su=Hello%20Azmainur%20Rahman"
+                            target="_blank" rel="noopener noreferrer" aria-label="Email Azmainur Rahman">
                             <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
                                 <path
                                     d="M5 7H19C20.1 7 21 7.9 21 9V17C21 18.1 20.1 19 19 19H5C3.9 19 3 18.1 3 17V9C3 7.9 3.9 7 5 7Z"
