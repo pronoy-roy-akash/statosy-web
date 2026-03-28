@@ -82,6 +82,11 @@ Route::prefix('admin')->name('admin.')->group(function () {
 
         Route::get('/messages', [MessagesController::class, 'index'])->name('messages.index');
         Route::get('/messages/{message}', [MessagesController::class, 'show'])->name('messages.show');
+        Route::delete('/messages/{message}', [MessagesController::class, 'destroy'])->name('messages.destroy');
+
+        Route::get('/meeting-requests', [MessagesController::class, 'meetings'])->name('meetings.index');
+        Route::get('/meeting-requests/{message}', [MessagesController::class, 'showMeeting'])->name('meetings.show');
+        Route::delete('/meeting-requests/{message}', [MessagesController::class, 'destroyMeeting'])->name('meetings.destroy');
 
         Route::get('/applications', [ApplicationsController::class, 'index'])->name('applications.index');
         Route::get('/applications/{application}', [ApplicationsController::class, 'show'])->name('applications.show');

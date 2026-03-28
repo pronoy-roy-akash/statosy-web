@@ -108,6 +108,8 @@
         </div>
         <a href="{{ route('admin.messages.index') }}"
             style="{{ request()->routeIs('admin.messages.*') ? $linkStyleActive : $linkStyle }}">Messages</a>
+        <a href="{{ route('admin.meetings.index') }}"
+            style="{{ request()->routeIs('admin.meetings.*') ? $linkStyleActive : $linkStyle }}">Meeting Requests</a>
         <a href="{{ route('admin.job-posts.index') }}"
             style="{{ request()->routeIs('admin.job-posts.*') ? $linkStyleActive : $linkStyle }}">Job Posts</a>
         <a href="{{ route('admin.applications.index') }}"
