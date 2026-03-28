@@ -9,6 +9,20 @@
     <meta name="theme-color" content="#000000">
     <link rel="icon" href="{{ asset('frontend/assets/images/icon.png') }}" type="image/png">
     <link rel="apple-touch-icon" href="{{ asset('frontend/assets/images/icon.png') }}">
+    @php
+        $fontHref = \App\Support\SiteSettings::fontGoogleHref();
+        $fontStack = \App\Support\SiteSettings::fontCssStack();
+    @endphp
+    @if ($fontHref)
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="{{ $fontHref }}" rel="stylesheet">
+    @endif
+    <style>
+        :root {
+            --font: {!! $fontStack !!};
+        }
+    </style>
 
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>

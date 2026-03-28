@@ -1,6 +1,14 @@
 <?php
 
 use App\Http\Controllers\SiteController;
+use App\Http\Controllers\Admin\ApplicationsController;
+use App\Http\Controllers\Admin\AuthController as AdminAuthController;
+use App\Http\Controllers\Admin\ContentController;
+use App\Http\Controllers\Admin\DashboardController;
+use App\Http\Controllers\Admin\MessagesController;
+use App\Http\Controllers\Admin\NavigationController;
+use App\Http\Controllers\Admin\PageEditorController;
+use App\Http\Controllers\Admin\SettingsController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -46,3 +54,43 @@ Route::prefix('industries')->name('industries.')->group(function () {
     Route::get('/energy-and-utilities', [SiteController::class, 'page'])->defaults('page', 'industries.energy-and-utilities')->name('energy-and-utilities');
     Route::get('/legal-and-law-firms', [SiteController::class, 'page'])->defaults('page', 'industries.legal-and-law-firms')->name('legal-and-law-firms');
 });
+
+Route::prefix('admin')->name('admin.')->group(function () {
+    Route::get('/login', [AdminAuthController::class, 'showLogin'])->name('login');
+    Route::post('/login', [AdminAuthController::class, 'login'])->name('login.post');
+    Route::get('/register', [AdminAuthController::class, 'showRegister'])->name('register');
+    Route::post('/register', [AdminAuthController::class, 'register'])->name('register.post');
+
+    Route::middleware('auth')->group(function () {
+        Route::post('/logout', [AdminAuthController::class, 'logout'])->name('logout');
+
+        Route::get('/', [DashboardController::class, 'index'])->name('dashboard');
+
+        Route::get('/pages', [PageEditorController::class, 'index'])->name('pages.index');
+        Route::get('/pages/{page}', [PageEditorController::class, 'edit'])->name('pages.edit');
+        Route::post('/pages/{page}', [PageEditorController::class, 'update'])->name('pages.update');
+
+        Route::get('/navigation', [NavigationController::class, 'edit'])->name('navigation.edit');
+        Route::post('/navigation', [NavigationController::class, 'update'])->name('navigation.update');
+
+        Route::get('/content', [ContentController::class, 'index'])->name('content.index');
+        Route::get('/content/create', [ContentController::class, 'create'])->name('content.create');
+        Route::post('/content', [ContentController::class, 'store'])->name('content.store');
+        Route::get('/content/{content}', [ContentController::class, 'edit'])->name('content.edit');
+        Route::put('/content/{content}', [ContentController::class, 'update'])->name('content.update');
+        Route::delete('/content/{content}', [ContentController::class, 'destroy'])->name('content.destroy');
+
+        Route::get('/messages', [MessagesController::class, 'index'])->name('messages.index');
+        Route::get('/messages/{message}', [MessagesController::class, 'show'])->name('messages.show');
+
+        Route::get('/applications', [ApplicationsController::class, 'index'])->name('applications.index');
+        Route::get('/applications/{application}', [ApplicationsController::class, 'show'])->name('applications.show');
+
+        Route::get('/settings', [SettingsController::class, 'edit'])->name('settings.edit');
+        Route::post('/settings', [SettingsController::class, 'update'])->name('settings.update');
+    });
+});
+
+Route::get('/login', function () {
+    return redirect()->route('admin.login');
+})->name('login');

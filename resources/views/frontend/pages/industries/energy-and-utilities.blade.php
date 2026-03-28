@@ -9,13 +9,15 @@
     <section class="hero">
         <div class="container hero__grid">
             <div class="hero__copy">
-                <h1 class="h1">{{ $title }}</h1>
-                <p class="lead">Deep industry understanding paired with modern engineering to build solutions for energy
-                    and
-                    utilities—reliable systems, real-time visibility, and secure workflows.</p>
+                <h1 class="h1">{{ \App\Support\SiteContentStore::get('industries.energy-and-utilities.hero.title', $title ?? 'Energy And Utilities') }}</h1>
+                <p class="lead">
+                    {{ \App\Support\SiteContentStore::get('industries.energy-and-utilities.hero.text', 'Deep industry understanding paired with modern engineering to build solutions for energy and utilities—reliable systems, real-time visibility, and secure workflows.') }}
+                </p>
                 <div class="hero__cta">
-                    <a class="btn btn--primary" href="{{ route('contact-us') }}#message">Send a message</a>
-                    <a class="btn btn--ghost" href="{{ route('contact-us') }}#schedule">Schedule a meeting</a>
+                    <a class="btn btn--primary"
+                        href="{{ route('contact-us') }}#message">{{ \App\Support\SiteContentStore::get('industries.energy-and-utilities.hero.cta.primary', 'Send a message') }}</a>
+                    <a class="btn btn--ghost"
+                        href="{{ route('contact-us') }}#schedule">{{ \App\Support\SiteContentStore::get('industries.energy-and-utilities.hero.cta.secondary', 'Schedule a meeting') }}</a>
                 </div>
             </div>
             <div class="hero__visual hero__visual--about" aria-hidden="true">

@@ -10,9 +10,10 @@
         <div class="container hero__grid">
             <div class="hero__copy">
                 {{-- <div class="eyebrow">{{ $kicker }}</div> --}}
-                <h1 class="h1">{{ $title }}</h1>
-                <p class="lead">Recognition follows consistent delivery. We focus on quality, usability, and measurable
-                    outcomes across software and cloud services.</p>
+                <h1 class="h1">{{ \App\Support\SiteContentStore::get('company.awards.hero.title', $title ?? 'Awards & Recognition') }}</h1>
+                <p class="lead">
+                    {{ \App\Support\SiteContentStore::get('company.awards.hero.text', 'Recognition follows consistent delivery. We focus on quality, usability, and measurable outcomes across software and cloud services.') }}
+                </p>
                 <div class="awardNote">
                     <div class="awardNote__title">Our awards wall (currently in beta)</div>
                     <div class="muted awardNote__text">Statosy is new to the market with our in-house built services. So yes,
@@ -21,8 +22,10 @@
                     <div class="awardNote__fine">Soon, these empty slots won’t be empty. Hold us to it.</div>
                 </div>
                 <div class="hero__cta">
-                    <a class="btn btn--primary" href="{{ route('contact-us') }}#message">Send a message</a>
-                    <a class="btn btn--ghost" href="{{ route('contact-us') }}#schedule">Schedule a meeting</a>
+                    <a class="btn btn--primary"
+                        href="{{ route('contact-us') }}#message">{{ \App\Support\SiteContentStore::get('company.awards.hero.cta.primary', 'Send a message') }}</a>
+                    <a class="btn btn--ghost"
+                        href="{{ route('contact-us') }}#schedule">{{ \App\Support\SiteContentStore::get('company.awards.hero.cta.secondary', 'Schedule a meeting') }}</a>
                 </div>
             </div>
             <div class="hero__visual" aria-hidden="true">

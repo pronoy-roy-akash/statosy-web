@@ -9,13 +9,15 @@
     <section class="hero">
         <div class="container hero__grid">
             <div class="hero__copy">
-                <h1 class="h1">{{ $title }}</h1>
-                <p class="lead">We handle the headache of managing legal and law firm IT so you can focus on your
-                    clients—secure
-                    document workflows, reliable systems, and high availability.</p>
+                <h1 class="h1">{{ \App\Support\SiteContentStore::get('industries.legal-and-law-firms.hero.title', $title ?? 'Legal And Law Firms') }}</h1>
+                <p class="lead">
+                    {{ \App\Support\SiteContentStore::get('industries.legal-and-law-firms.hero.text', 'We handle the headache of managing legal and law firm IT so you can focus on your clients—secure document workflows, reliable systems, and high availability.') }}
+                </p>
                 <div class="hero__cta">
-                    <a class="btn btn--primary" href="{{ route('contact-us') }}#message">Send a message</a>
-                    <a class="btn btn--ghost" href="{{ route('contact-us') }}#schedule">Schedule a meeting</a>
+                    <a class="btn btn--primary"
+                        href="{{ route('contact-us') }}#message">{{ \App\Support\SiteContentStore::get('industries.legal-and-law-firms.hero.cta.primary', 'Send a message') }}</a>
+                    <a class="btn btn--ghost"
+                        href="{{ route('contact-us') }}#schedule">{{ \App\Support\SiteContentStore::get('industries.legal-and-law-firms.hero.cta.secondary', 'Schedule a meeting') }}</a>
                 </div>
             </div>
             <div class="hero__visual hero__visual--about" aria-hidden="true">

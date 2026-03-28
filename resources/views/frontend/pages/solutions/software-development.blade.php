@@ -9,12 +9,17 @@
     <section class="hero">
         <div class="container hero__grid">
             <div class="hero__copy">
-                <h1 class="h1">{{ $title }}</h1>
-                <p class="lead">Pixel-perfect web and mobile apps delivered with speed and discipline—secure, scalable, and
-                    built for long-term maintainability.</p>
+                <h1 class="h1">
+                    {{ \App\Support\SiteContentStore::get('solutions.software-development.hero.title', $title ?? 'Software Development') }}
+                </h1>
+                <p class="lead">
+                    {{ \App\Support\SiteContentStore::get('solutions.software-development.hero.text', 'Pixel-perfect web and mobile apps delivered with speed and discipline—secure, scalable, and built for long-term maintainability.') }}
+                </p>
                 <div class="hero__cta">
-                    <a class="btn btn--primary" href="{{ route('contact-us') }}#message">Send a message</a>
-                    <a class="btn btn--ghost" href="{{ route('contact-us') }}#schedule">Schedule a meeting</a>
+                    <a class="btn btn--primary"
+                        href="{{ route('contact-us') }}#message">{{ \App\Support\SiteContentStore::get('solutions.software-development.hero.cta.primary', 'Send a message') }}</a>
+                    <a class="btn btn--ghost"
+                        href="{{ route('contact-us') }}#schedule">{{ \App\Support\SiteContentStore::get('solutions.software-development.hero.cta.secondary', 'Schedule a meeting') }}</a>
                 </div>
             </div>
             <div class="hero__visual hero__visual--about" aria-hidden="true">

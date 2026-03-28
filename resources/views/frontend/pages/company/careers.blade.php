@@ -7,12 +7,15 @@
     <section class="hero">
         <div class="container hero__grid">
             <div class="hero__copy">
-                <h1 class="h1">{{ $title }}</h1>
-                <p class="lead">Accelerate your career now. Join a team that values quality, ethics, and real
-                    impact—building secure and highly available software.</p>
+                <h1 class="h1">{{ \App\Support\SiteContentStore::get('company.careers.hero.title', $title ?? 'Careers') }}</h1>
+                <p class="lead">
+                    {{ \App\Support\SiteContentStore::get('company.careers.hero.text', 'Accelerate your career now. Join a team that values quality, ethics, and real impact—building secure and highly available software.') }}
+                </p>
                 <div class="hero__cta">
-                    <a class="btn btn--primary" href="{{ route('contact-us') }}#message">Send a message</a>
-                    <a class="btn btn--ghost" href="{{ route('contact-us') }}#schedule">Schedule a meeting</a>
+                    <a class="btn btn--primary"
+                        href="{{ route('contact-us') }}#message">{{ \App\Support\SiteContentStore::get('company.careers.hero.cta.primary', 'Send a message') }}</a>
+                    <a class="btn btn--ghost"
+                        href="{{ route('contact-us') }}#schedule">{{ \App\Support\SiteContentStore::get('company.careers.hero.cta.secondary', 'Schedule a meeting') }}</a>
                 </div>
             </div>
             <div class="hero__visual hero__visual--about" aria-hidden="true">

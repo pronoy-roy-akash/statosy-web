@@ -7,12 +7,15 @@
     <section class="hero">
         <div class="container hero__grid">
             <div class="hero__copy">
-                <h1 class="h1">{{ $title }}</h1>
-                <p class="lead">We make sure your cloud infrastructure runs at maximum efficiency—reducing degraded
-                    uptime, improving performance, and keeping services highly available.</p>
+                <h1 class="h1">{{ \App\Support\SiteContentStore::get('solutions.cloud-management.hero.title', $title ?? 'Cloud Management') }}</h1>
+                <p class="lead">
+                    {{ \App\Support\SiteContentStore::get('solutions.cloud-management.hero.text', 'We make sure your cloud infrastructure runs at maximum efficiency—reducing degraded uptime, improving performance, and keeping services highly available.') }}
+                </p>
                 <div class="hero__cta">
-                    <a class="btn btn--primary" href="{{ route('contact-us') }}#message">Send a message</a>
-                    <a class="btn btn--ghost" href="{{ route('contact-us') }}#schedule">Schedule a meeting</a>
+                    <a class="btn btn--primary"
+                        href="{{ route('contact-us') }}#message">{{ \App\Support\SiteContentStore::get('solutions.cloud-management.hero.cta.primary', 'Send a message') }}</a>
+                    <a class="btn btn--ghost"
+                        href="{{ route('contact-us') }}#schedule">{{ \App\Support\SiteContentStore::get('solutions.cloud-management.hero.cta.secondary', 'Schedule a meeting') }}</a>
                 </div>
             </div>
             <div class="hero__visual hero__visual--about" aria-hidden="true">

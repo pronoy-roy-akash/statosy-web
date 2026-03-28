@@ -9,12 +9,15 @@
     <section class="hero">
         <div class="container hero__grid">
             <div class="hero__copy">
-                <h1 class="h1">{{ $title }}</h1>
-                <p class="lead">Banking and finance software built with precision and security—protecting sensitive data,
-                    supporting critical workflows, and staying available under real-world load.</p>
+                <h1 class="h1">{{ \App\Support\SiteContentStore::get('industries.banking-and-finance.hero.title', $title ?? 'Banking And Finance') }}</h1>
+                <p class="lead">
+                    {{ \App\Support\SiteContentStore::get('industries.banking-and-finance.hero.text', 'Banking and finance software built with precision and security—protecting sensitive data, supporting critical workflows, and staying available under real-world load.') }}
+                </p>
                 <div class="hero__cta">
-                    <a class="btn btn--primary" href="{{ route('contact-us') }}#message">Send a message</a>
-                    <a class="btn btn--ghost" href="{{ route('contact-us') }}#schedule">Schedule a meeting</a>
+                    <a class="btn btn--primary"
+                        href="{{ route('contact-us') }}#message">{{ \App\Support\SiteContentStore::get('industries.banking-and-finance.hero.cta.primary', 'Send a message') }}</a>
+                    <a class="btn btn--ghost"
+                        href="{{ route('contact-us') }}#schedule">{{ \App\Support\SiteContentStore::get('industries.banking-and-finance.hero.cta.secondary', 'Schedule a meeting') }}</a>
                 </div>
             </div>
             <div class="hero__visual hero__visual--about" aria-hidden="true">

@@ -9,14 +9,20 @@
     <section class="hero">
         <div class="container hero__grid">
             <div class="hero__copy">
-                <div class="eyebrow">Founded in 2025 • Cloud-first • Security-first</div>
-                <h1 class="h1">Build systems that stay safe and stay up</h1>
-                <p class="lead">Statosy is a cloud and software company with its own in-house infrastructure—delivering
-                    secure, high-availability systems, powerful software, and exceptional web solutions through a top-tier
-                    engineering team.</p>
+                <div class="eyebrow">
+                    {{ \App\Support\SiteContentStore::get('home.hero.eyebrow', 'Founded in 2025 • Cloud-first • Security-first') }}
+                </div>
+                <h1 class="h1">
+                    {{ \App\Support\SiteContentStore::get('home.hero.title', 'Build systems that stay safe and stay up') }}
+                </h1>
+                <p class="lead">
+                    {{ \App\Support\SiteContentStore::get('home.hero.lead', 'Statosy is a cloud and software company with its own in-house infrastructure—delivering secure, high-availability systems, powerful software, and exceptional web solutions through a top-tier engineering team.') }}
+                </p>
                 <div class="hero__cta">
-                    <a class="btn btn--primary" href="#contact">Start a project</a>
-                    <a class="btn btn--ghost" href="#services">Explore services</a>
+                    <a class="btn btn--primary"
+                        href="#contact">{{ \App\Support\SiteContentStore::get('home.hero.cta.primary', 'Start a project') }}</a>
+                    <a class="btn btn--ghost"
+                        href="#services">{{ \App\Support\SiteContentStore::get('home.hero.cta.secondary', 'Explore services') }}</a>
 
                 </div>
 

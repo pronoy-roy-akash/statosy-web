@@ -7,12 +7,15 @@
     <section class="hero">
         <div class="container hero__grid">
             <div class="hero__copy">
-                <h1 class="h1">{{ $title }}</h1>
-                <p class="lead">If you have any questions or need help, contact our team. Send a message or request a
-                    meeting—we’ll reply with the best next steps.</p>
+                <h1 class="h1">{{ \App\Support\SiteContentStore::get('contact.hero.title', $title ?? 'Contact us') }}</h1>
+                <p class="lead">
+                    {{ \App\Support\SiteContentStore::get('contact.hero.text', 'If you have any questions or need help, contact our team. Send a message or request a meeting—we’ll reply with the best next steps.') }}
+                </p>
                 <div class="hero__cta">
-                    <a class="btn btn--primary" href="#message">Send a message</a>
-                    <a class="btn btn--ghost" href="#schedule">Schedule a meeting</a>
+                    <a class="btn btn--primary"
+                        href="#message">{{ \App\Support\SiteContentStore::get('contact.hero.cta.primary', 'Send a message') }}</a>
+                    <a class="btn btn--ghost"
+                        href="#schedule">{{ \App\Support\SiteContentStore::get('contact.hero.cta.secondary', 'Schedule a meeting') }}</a>
                 </div>
             </div>
 
@@ -26,7 +29,7 @@
                         </div>
                         <div class="meta meta--split">
                             <div class="meta__k">Email</div>
-                            <div class="meta__v">hello@statosy.com</div>
+                            <div class="meta__v">{{ \App\Support\SiteContentStore::get('contact.email', 'hello@statosy.com') }}</div>
                         </div>
                         <div class="meta meta--split">
                             <div class="meta__k">Meetings</div>

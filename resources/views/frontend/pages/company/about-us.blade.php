@@ -10,12 +10,15 @@
         <div class="container hero__grid">
             <div class="hero__copy">
                 {{-- <div class="eyebrow">{{ $kicker }}</div> --}}
-                <h1 class="h1">{{ $title }}</h1>
-                <p class="lead">Statosy is a cloud services and software company focused on reliability, security, and high
-                    availability—built by a team that cares about outcomes.</p>
+                <h1 class="h1">{{ \App\Support\SiteContentStore::get('company.about.hero.title', $title ?? 'About Us') }}</h1>
+                <p class="lead">
+                    {{ \App\Support\SiteContentStore::get('company.about.hero.text', 'Statosy is a cloud services and software company focused on reliability, security, and high availability—built by a team that cares about outcomes.') }}
+                </p>
                 <div class="hero__cta">
-                    <a class="btn btn--primary" href="{{ route('contact-us') }}#message">Let's Talk</a>
-                    <a class="btn btn--ghost" href="{{ route('contact-us') }}#schedule">Schedule a meeting</a>
+                    <a class="btn btn--primary"
+                        href="{{ route('contact-us') }}#message">{{ \App\Support\SiteContentStore::get('company.about.hero.cta.primary', \"Let's Talk\") }}</a>
+                    <a class="btn btn--ghost"
+                        href="{{ route('contact-us') }}#schedule">{{ \App\Support\SiteContentStore::get('company.about.hero.cta.secondary', 'Schedule a meeting') }}</a>
                 </div>
             </div>
 
