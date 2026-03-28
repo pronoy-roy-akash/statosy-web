@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\ContactMessage;
 use App\Models\JobApplication;
+use App\Models\JobPost;
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
 use Illuminate\View\View;
@@ -44,10 +45,24 @@ class SiteController extends Controller
             abort(404);
         }
 
-        return view($pages[$page]['view'], [
+        $data = [
             'kicker' => $pages[$page]['kicker'],
             'title' => $pages[$page]['title'],
-        ]);
+        ];
+
+        if ($page === 'company.careers') {
+            try {
+                $data['jobPosts'] = JobPost::query()
+                    ->where('active', true)
+                    ->orderBy('sort_order')
+                    ->orderBy('title')
+                    ->get();
+            } catch (\Throwable) {
+                $data['jobPosts'] = collect();
+            }
+        }
+
+        return view($pages[$page]['view'], $data);
     }
 
     public function contact(Request $request): RedirectResponse

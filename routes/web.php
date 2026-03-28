@@ -86,6 +86,13 @@ Route::prefix('admin')->name('admin.')->group(function () {
         Route::get('/applications', [ApplicationsController::class, 'index'])->name('applications.index');
         Route::get('/applications/{application}', [ApplicationsController::class, 'show'])->name('applications.show');
 
+        Route::get('/job-posts', [ApplicationsController::class, 'jobPosts'])->name('job-posts.index');
+        Route::get('/job-posts/create', [ApplicationsController::class, 'createJobPost'])->name('job-posts.create');
+        Route::post('/job-posts', [ApplicationsController::class, 'storeJobPost'])->name('job-posts.store');
+        Route::get('/job-posts/{post}', [ApplicationsController::class, 'editJobPost'])->name('job-posts.edit');
+        Route::put('/job-posts/{post}', [ApplicationsController::class, 'updateJobPost'])->name('job-posts.update');
+        Route::delete('/job-posts/{post}', [ApplicationsController::class, 'destroyJobPost'])->name('job-posts.destroy');
+
         Route::get('/settings', [SettingsController::class, 'edit'])->name('settings.edit');
         Route::post('/settings', [SettingsController::class, 'update'])->name('settings.update');
     });

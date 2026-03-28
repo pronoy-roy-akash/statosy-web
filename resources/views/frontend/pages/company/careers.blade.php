@@ -7,7 +7,8 @@
     <section class="hero">
         <div class="container hero__grid">
             <div class="hero__copy">
-                <h1 class="h1">{{ \App\Support\SiteContentStore::get('company.careers.hero.title', $title ?? 'Careers') }}</h1>
+                <h1 class="h1">
+                    {{ \App\Support\SiteContentStore::get('company.careers.hero.title', $title ?? 'Careers') }}</h1>
                 <p class="lead">
                     {{ \App\Support\SiteContentStore::get('company.careers.hero.text', 'Accelerate your career now. Join a team that values quality, ethics, and real impact—building secure and highly available software.') }}
                 </p>
@@ -77,81 +78,115 @@
             </div>
 
             <div class="jobs">
-                <details class="job">
-                    <summary class="job__summary">
-                        <span class="job__title">Software Engineer (Backend)</span>
-                        <span class="job__meta">Full-time • Hybrid</span>
-                    </summary>
-                    <div class="job__body">
-                        <div class="muted">Build secure APIs, services, and data workflows that power cloud-first products.
-                        </div>
-                        <ul class="job__list">
-                            <li>Design and implement backend services with clean architecture.</li>
-                            <li>Work with databases, caching, queues, and integrations.</li>
-                            <li>Improve reliability through testing, observability, and performance work.</li>
-                        </ul>
-                        <div class="job__cta">
-                            <a class="btn btn--ghost" href="#apply">Apply for this role</a>
-                        </div>
-                    </div>
-                </details>
+                @php
+                    $posts = $jobPosts ?? collect();
+                @endphp
 
-                <details class="job">
-                    <summary class="job__summary">
-                        <span class="job__title">Software Engineer (Frontend)</span>
-                        <span class="job__meta">Full-time • Hybrid</span>
-                    </summary>
-                    <div class="job__body">
-                        <div class="muted">Build fast, accessible interfaces that users actually enjoy working with.</div>
-                        <ul class="job__list">
-                            <li>Develop UI features with strong attention to quality and usability.</li>
-                            <li>Collaborate with backend engineers to integrate APIs cleanly.</li>
-                            <li>Improve performance, responsive layout, and accessibility.</li>
-                        </ul>
-                        <div class="job__cta">
-                            <a class="btn btn--ghost" href="#apply">Apply for this role</a>
+                @if ($posts->isNotEmpty())
+                    @foreach ($posts as $post)
+                        @php
+                            $lines = preg_split("/\\r\\n|\\r|\\n/", (string) $post->bullets);
+                            $lines = array_values(array_filter(array_map('trim', $lines ?? []), fn($l) => $l !== ''));
+                        @endphp
+                        <details class="job">
+                            <summary class="job__summary">
+                                <span class="job__title">{{ $post->title }}</span>
+                                <span class="job__meta">{{ $post->meta }}</span>
+                            </summary>
+                            <div class="job__body">
+                                <div class="muted">{{ $post->summary }}</div>
+                                @if (!empty($lines))
+                                    <ul class="job__list">
+                                        @foreach ($lines as $line)
+                                            <li>{{ $line }}</li>
+                                        @endforeach
+                                    </ul>
+                                @endif
+                                <div class="job__cta">
+                                    <a class="btn btn--ghost" href="#apply">Apply for this role</a>
+                                </div>
+                            </div>
+                        </details>
+                    @endforeach
+                @else
+                    <details class="job">
+                        <summary class="job__summary">
+                            <span class="job__title">Software Engineer (Backend)</span>
+                            <span class="job__meta">Full-time • Hybrid</span>
+                        </summary>
+                        <div class="job__body">
+                            <div class="muted">Build secure APIs, services, and data workflows that power cloud-first
+                                products.
+                            </div>
+                            <ul class="job__list">
+                                <li>Design and implement backend services with clean architecture.</li>
+                                <li>Work with databases, caching, queues, and integrations.</li>
+                                <li>Improve reliability through testing, observability, and performance work.</li>
+                            </ul>
+                            <div class="job__cta">
+                                <a class="btn btn--ghost" href="#apply">Apply for this role</a>
+                            </div>
                         </div>
-                    </div>
-                </details>
+                    </details>
 
-                <details class="job">
-                    <summary class="job__summary">
-                        <span class="job__title">Cloud / DevOps Engineer</span>
-                        <span class="job__meta">Full-time • Remote</span>
-                    </summary>
-                    <div class="job__body">
-                        <div class="muted">Keep systems safe and highly available through automation and operational
-                            discipline.</div>
-                        <ul class="job__list">
-                            <li>Implement CI/CD, infrastructure automation, and deployment pipelines.</li>
-                            <li>Improve observability, incident readiness, and reliability practices.</li>
-                            <li>Support cost optimization and secure cloud configuration.</li>
-                        </ul>
-                        <div class="job__cta">
-                            <a class="btn btn--ghost" href="#apply">Apply for this role</a>
+                    <details class="job">
+                        <summary class="job__summary">
+                            <span class="job__title">Software Engineer (Frontend)</span>
+                            <span class="job__meta">Full-time • Hybrid</span>
+                        </summary>
+                        <div class="job__body">
+                            <div class="muted">Build fast, accessible interfaces that users actually enjoy working with.
+                            </div>
+                            <ul class="job__list">
+                                <li>Develop UI features with strong attention to quality and usability.</li>
+                                <li>Collaborate with backend engineers to integrate APIs cleanly.</li>
+                                <li>Improve performance, responsive layout, and accessibility.</li>
+                            </ul>
+                            <div class="job__cta">
+                                <a class="btn btn--ghost" href="#apply">Apply for this role</a>
+                            </div>
                         </div>
-                    </div>
-                </details>
+                    </details>
 
-                <details class="job">
-                    <summary class="job__summary">
-                        <span class="job__title">Customer Support Specialist</span>
-                        <span class="job__meta">Full-time • Remote</span>
-                    </summary>
-                    <div class="job__body">
-                        <div class="muted">Support workflows aligned to reliability goals—fast response, clear
-                            communication,
-                            and ownership.</div>
-                        <ul class="job__list">
-                            <li>Handle incoming requests with clear triage and documentation.</li>
-                            <li>Coordinate with engineering for escalations and incident response.</li>
-                            <li>Maintain customer satisfaction through proactive updates.</li>
-                        </ul>
-                        <div class="job__cta">
-                            <a class="btn btn--ghost" href="#apply">Apply for this role</a>
+                    <details class="job">
+                        <summary class="job__summary">
+                            <span class="job__title">Cloud / DevOps Engineer</span>
+                            <span class="job__meta">Full-time • Remote</span>
+                        </summary>
+                        <div class="job__body">
+                            <div class="muted">Keep systems safe and highly available through automation and operational
+                                discipline.</div>
+                            <ul class="job__list">
+                                <li>Implement CI/CD, infrastructure automation, and deployment pipelines.</li>
+                                <li>Improve observability, incident readiness, and reliability practices.</li>
+                                <li>Support cost optimization and secure cloud configuration.</li>
+                            </ul>
+                            <div class="job__cta">
+                                <a class="btn btn--ghost" href="#apply">Apply for this role</a>
+                            </div>
                         </div>
-                    </div>
-                </details>
+                    </details>
+
+                    <details class="job">
+                        <summary class="job__summary">
+                            <span class="job__title">Customer Support Specialist</span>
+                            <span class="job__meta">Full-time • Remote</span>
+                        </summary>
+                        <div class="job__body">
+                            <div class="muted">Support workflows aligned to reliability goals—fast response, clear
+                                communication,
+                                and ownership.</div>
+                            <ul class="job__list">
+                                <li>Handle incoming requests with clear triage and documentation.</li>
+                                <li>Coordinate with engineering for escalations and incident response.</li>
+                                <li>Maintain customer satisfaction through proactive updates.</li>
+                            </ul>
+                            <div class="job__cta">
+                                <a class="btn btn--ghost" href="#apply">Apply for this role</a>
+                            </div>
+                        </div>
+                    </details>
+                @endif
             </div>
             <div class="sectionDivider sectionDivider--lg" aria-hidden="true"></div>
         </div>
@@ -195,14 +230,23 @@
                         <label for="career_role">Designation</label>
                         <select id="career_role" name="role" required>
                             <option value="" @selected(old('role') === null || old('role') === '')>Select a role</option>
-                            <option value="Software Engineer (Backend)" @selected(old('role') === 'Software Engineer (Backend)')>Software Engineer
-                                (Backend)</option>
-                            <option value="Software Engineer (Frontend)" @selected(old('role') === 'Software Engineer (Frontend)')>Software Engineer
-                                (Frontend)</option>
-                            <option value="Cloud / DevOps Engineer" @selected(old('role') === 'Cloud / DevOps Engineer')>Cloud / DevOps Engineer
-                            </option>
-                            <option value="Customer Support Specialist" @selected(old('role') === 'Customer Support Specialist')>Customer Support
-                                Specialist</option>
+                            @if ($posts->isNotEmpty())
+                                @foreach ($posts as $post)
+                                    <option value="{{ $post->title }}" @selected(old('role') === $post->title)>
+                                        {{ $post->title }}
+                                    </option>
+                                @endforeach
+                            @else
+                                <option value="Software Engineer (Backend)" @selected(old('role') === 'Software Engineer (Backend)')>Software Engineer
+                                    (Backend)</option>
+                                <option value="Software Engineer (Frontend)" @selected(old('role') === 'Software Engineer (Frontend)')>Software Engineer
+                                    (Frontend)</option>
+                                <option value="Cloud / DevOps Engineer" @selected(old('role') === 'Cloud / DevOps Engineer')>Cloud / DevOps
+                                    Engineer
+                                </option>
+                                <option value="Customer Support Specialist" @selected(old('role') === 'Customer Support Specialist')>Customer Support
+                                    Specialist</option>
+                            @endif
                         </select>
                         @error('role')
                             <div class="error">{{ $message }}</div>
