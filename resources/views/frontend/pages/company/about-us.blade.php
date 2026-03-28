@@ -150,9 +150,8 @@
                     <div class="leader__work">Leads delivery coordination and team enablement to keep projects predictable,
                         well-structured, and client-focused.</div>
                     <div class="leader__links">
-                        <a class="iconBtn"
-                            href="https://www.linkedin.com/search/results/all/?keywords=Azmainur%20Rahman%20Statosy"
-                            target="_blank" rel="noopener noreferrer" aria-label="Azmainur Rahman on LinkedIn">
+                        <a class="iconBtn" href="https://www.linkedin.com/in/azmainur-rahman-469ba53ba/" target="_blank"
+                            rel="noopener noreferrer" aria-label="Azmainur Rahman on LinkedIn">
                             <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"
                                 aria-hidden="true">
                                 <path
