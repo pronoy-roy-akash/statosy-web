@@ -206,7 +206,7 @@
                     <p class="muted">We build and operate production software with security-first practices, reliability
                         patterns, and clear delivery discipline—so your team gets stability without losing speed.</p>
                     <div class="impact__cta">
-                        <a class="btn btn--primary" href="{{ route('home') }}#contact">Talk to our experts</a>
+                        <a class="btn btn--primary" href="{{ route('contact') }}">Talk to our experts</a>
                         <a class="btn btn--ghost" href="{{ route('home') }}#services">View services</a>
                     </div>
                 </div>
